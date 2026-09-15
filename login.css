@@ -50,6 +50,13 @@ body {
     border-radius: 4px;
 }
 
+.loginBox_error{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    padding-top: 5px;
+    display: none;
+}
+
 .loginBox_btn {
     margin-top: 20px;
 }
