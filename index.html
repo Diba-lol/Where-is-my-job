@@ -1,0 +1,49 @@
+<!-- Login page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+
+    <div class="loginBox">
+        <h2>Login into your account</h2>
+
+        <div class="loginBox_email">
+            <p>Email</p>
+            <input id="login_mail" type="text" placeholder="Enter your email here" required>
+        </div>
+
+        <div class="loginBox_pass">
+            <p>Password</p>
+            <input id="login_pass" type="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="loginBox_btn">
+            <button id="login_btn" class="login_btn">Login now</button>
+        </div>
+
+        <div class="loginBox_error">
+            <p>email or password is incorrect</p>
+
+        </div>
+
+        <div class="loginBox_signup">
+            <p>don't have a account <span><a href="./register.html">sign up</a></span></p>
+        </div>
+
+    </div>
+
+<script src="./login.js"></script>
+</body>
+
+</html>
