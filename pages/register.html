@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/register.css">
+</head>
+
+<body>
+    <form action="" class="reg-form">
+        <h2>Create your Job profile</h2>
+        <p>Search & apply to jobs from our website</p>
+
+        <div class="reg-form_field">
+            <label for="register_name">Full name<span>*</span></label>
+            <input id="register_name" type="text" placeholder="What is your name ?" required>
+            <small>Enter your name</small>
+        </div>
+
+        <div class="reg-form_field">
+            <label for="register_email">Email ID<span>*</span></label>
+            <input id="register_email" type="email" placeholder="Enter your mail ID" required>
+            <small>Enter your email</small>
+        </div>
+
+        <div class="reg-form_field">
+            <label for="register_password">Password<span>*</span></label>
+            <input id="register_password" type="password" placeholder="Enter your password..." minlength="6" required>
+            <small>Password must contain 6 characters</small>
+        </div>
+
+        <div class="reg-form_field">
+            <label for="register_mobile">Mobile Number<span>*</span></label>
+            <input id="register_mobile" type="tel" placeholder="Enter your mob number" required>
+        </div>
+
+        <div class="agree-term">
+            <input id="register_terms" type="checkbox" required>
+            <label for="register_terms">By clicking Register, you agree to the Terms and Conditions & Privacy Policy of WMJ.</label>
+        </div>
+
+        <button type="submit" class="register_btn">Register now</button>
+
+        <div class="reg-form_login">
+            <p>Already have an account <span><a href="../index.html">login</a></span></p>
+        </div>
+    </form>
+
+
+
+
+    <script src="../scripts/register.js"></script>
+</body>
+
+</html>
