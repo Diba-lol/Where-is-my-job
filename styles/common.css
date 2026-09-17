@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Anton", sans-serif;
-  background-color: rgb(236, 236, 236);
+  background: linear-gradient(90deg, #ededed, #d7d7d7);
 }
 
 .navbar {
@@ -20,9 +20,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 20px 40px;
+  padding: 7px 40px;
   border-bottom: #000 2px solid;
-  background-color: #f5f3f3;
+  background: linear-gradient(90deg, #e4e4e5, #e3e2e2);
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -33,15 +33,15 @@ body {
 }
 
 .logo {
-  width: 400px;
+  width: 350px;
   height: auto;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  margin-right: 80px;
-  gap: 30px;
+  margin-right: 130px;
+  gap: 20px;
   padding: 0;
 }
 
@@ -51,11 +51,11 @@ body {
   font-size: 23px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  transition: 0.3s ease;
+  transition: 0.1s ease;
 }
 
 .nav-links a:hover {
-  color: #807f7f;
+  color: #ffffff;
 }
 
 .nav-actions {
@@ -72,7 +72,7 @@ body {
   border: 2px solid #000;
   border-radius: 50px;
   padding: 15px 28px;
-  background-color: transparent;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -4px 0px inset;
   transition: all 0.3s ease;
 }
@@ -104,6 +104,140 @@ body {
 .menu-icon {
   display: block;
   line-height: 1;
+}
+
+/* --- FOOTER --- */
+.floating-footer {
+  padding: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+  background-color: #050505;
+  border-radius: 40px;
+  padding: 60px;
+  position: relative; /* Keeps the scroll button pinned inside */
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Tighter gap for a cleaner look */
+  flex: 1; /* Allows columns to space evenly */
+  min-width: 150px; /* Prevents columns from getting too thin */
+}
+
+.brand-col {
+  flex: 2;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds clean space between logo, tagline, and socials */
+}
+
+.footer-img {
+  display: block;
+  width: 100%;
+  max-width: 300px; 
+  position: static;
+  margin: 0; 
+}
+
+.footer-tagline {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0 ; /* Removes the old 300px/160px top margin */
+  max-width: 90%;
+}
+.footer-socials {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  color: #ffffff;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-3px);
+}
+
+.footer-col h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.footer-col a {
+  color: #cbd5e1;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  color: #64748b;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Scroll Button Pinned to the Container */
+.scroll-top-btn {
+  position: absolute;
+  bottom: 25px;
+  right: 40px;
+  width: 55px;
+  height: 55px;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scroll-top-btn svg {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease;
+}
+
+.scroll-top-btn:hover {
+  transform: translateY(-5px);
+}
+
+.scroll-top-btn:hover svg {
+  transform: translateY(-3px);
 }
 
 
@@ -144,6 +278,7 @@ body {
   .navbar {
     position: relative;
     padding: 15px 20px;
+    position: sticky;
   }
 
   /* Logo */
@@ -183,6 +318,7 @@ body {
     align-items: stretch;
     border-radius: 20px;
     margin-right: 10px;
+    margin-top: 30px;
     gap: 0;
     padding: 10px 0;
     background-color: white;
@@ -216,7 +352,7 @@ body {
     flex-direction: column;
     align-items: stretch;
     gap: 20px;
-    margin-top: 60px;
+    margin-top: 70px;
     margin-right: 10px;
     border-radius: 20px;
 
@@ -299,5 +435,81 @@ body {
 
   .nav-actions.active {
     top: 270px;
+  }
+}
+
+
+
+
+/* --- TABLET SCREENS (iPads, Small Laptops - max 1024px) --- */
+@media (max-width: 1024px) {
+  .floating-footer {
+    padding: 30px 25px; /* Shrinks the outer gap */
+  }
+
+  .footer-container {
+    padding: 50px 40px;
+  }
+
+  .footer-content {
+    gap: 30px;
+  }
+
+  /* Makes the logo/brand section take up the full top row */
+  .brand-col {
+    flex: 1 1 100%; 
+    margin-bottom: 15px;
+  }
+
+  /* The 3 link columns sit side-by-side underneath the brand */
+  .footer-col {
+    flex: 1 1 30%; 
+  }
+}
+
+/* --- MOBILE SCREENS (Phones - max 768px) --- */
+@media (max-width: 768px) {
+  .floating-footer {
+    padding: 20px 15px; 
+  }
+
+  .footer-container {
+    padding: 40px 25px;
+    border-radius: 30px;
+    height: 1050px; /* Slightly softer corners for small screens */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stacks everything vertically */
+    gap: 35px;
+  }
+
+  .brand-col, .footer-col {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .footer-img {
+    max-width: 180px; /* Shrinks the logo slightly so it fits perfectly on small phones */
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+    padding-bottom: 30px; /* Leaves room so text isn't hidden behind the scroll button */
+  }
+
+  /* Moves and shrinks the scroll button for thumbs */
+  .scroll-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  .scroll-top-btn svg {
+    width: 18px;
+    height: 18px;
   }
 }

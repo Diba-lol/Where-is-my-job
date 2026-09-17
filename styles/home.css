@@ -76,10 +76,10 @@
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  margin-top: 30px;
+  margin-top: 40px;
   padding: 12px 24px 12px 15px;
   border: 2px solid #000;
-  border-radius: 50px;
+  border-radius: 60px;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -4px 0px inset;
   background-color: transparent;
 }
@@ -139,6 +139,7 @@
 
 .hero-person-img {
   max-width: 800px;
+  margin-top: 50px;
   height: auto;
   margin-left: -500px;
   object-fit: contain;
@@ -277,7 +278,6 @@
 .detail-item {
   color: #93c5fd;
   font-size: 16px;
-  display: flex;
   align-items: center;
   gap: 8px;
 }
@@ -294,13 +294,10 @@
 }
 
 .hiring-tag {
-  background-color: rgba(255, 255, 255, 0.1);
   color: #e2e8f0;
-  padding: 6px 12px;
+  padding: 6px 10px;
   border-radius: 20px;
-  font-size: 12px;
-  width: fit-content;
-  margin-bottom: 20px;
+  font-size: 15px;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -321,6 +318,7 @@
 .view-details {
   background: linear-gradient(90deg, #6366f1, #a855f7);
   color: #ffffff;
+  letter-spacing: 1px;
   text-decoration: none;
   text-align: center;
   font-size: 18px;
@@ -337,6 +335,8 @@
   transform: scale(1.05);
 }
 
+/* hiring-section */
+
 .hiring-section {
   background-color: #000000;
   border-radius: 60px;
@@ -345,7 +345,7 @@
   padding: 80px 60px;
   max-width: 1100px;
   margin-left: 60px;
-  margin-top: 160px;
+  margin-top: 150px;
   position: relative;
   z-index: 2;
 }
@@ -360,11 +360,11 @@
 }
 
 .hiring-image-container img {
-  max-width: 680px;
+  max-width: 780px;
   object-fit: contain;
   position: absolute;
-  margin-top: -340px;
-  margin-left: 190px;
+  margin-top: -480px;
+  margin-left: 220px;
 
 }
 
@@ -379,11 +379,11 @@
 
 .hiring-title {
   color: #ffffff;
-  font-size: 64px;
-  font-weight: 800;
+  font-size: 60px;
+  font-weight: 600;
   text-transform: uppercase;
   line-height: 1.1;
-  margin: 0 0 60px 180px;
+  margin: 0 0 60px 220px;
   letter-spacing: -1px;
 }
 
@@ -396,7 +396,7 @@
   border-radius: 50px;
   font-size: 16px;
   font-weight: 600;
-  margin-left: 180px;
+  margin-left: 220px;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: transform 0.2s;
@@ -406,13 +406,13 @@
   transform: translateY(-3px);
 }
 
-/* --- ONLINE COURSES SECTION --- */
+/* online-courses-section */
+
 .courses-section {
   padding: 60px;
   font-family: 'Inter', sans-serif;
 }
 
-/* Feature Pills (Real world projects, etc.) */
 .course-features-row {
   display: flex;
   gap: 15px;
@@ -421,11 +421,9 @@
 }
 
 .feature-pill {
-  background-color: rgba(99, 102, 241, 0.1);
-  /* Very subtle purple background */
+  background: linear-gradient(90deg, #8c8eef, #bd7afb);
   border: 1px solid rgba(99, 102, 241, 0.3);
-  color: #cbd5e1;
-  /* Light gray text */
+  color: black;
   padding: 8px 16px;
   border-radius: 50px;
   font-size: 14px;
@@ -435,18 +433,14 @@
   gap: 8px;
 }
 
-/* --- COURSE CARDS SPECIFIC STYLES --- */
 .course-card {
   padding-top: 0;
-  /* Remove top padding so the banner touches the edge */
   padding-left: 0;
   padding-right: 0;
   overflow: hidden;
 }
 
-/* The colorful top banner block */
 .course-banner {
-  height: 120px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -454,23 +448,11 @@
   margin-bottom: 25px;
 }
 
-.green-banner {
-  background: linear-gradient(135deg, #059669, #10b981);
+.course-banner img .ui-ux {
+  width: 500px;
+  object-fit: contain;
 }
 
-.pink-banner {
-  background: linear-gradient(135deg, #be123c, #f43f5e);
-}
-
-.blue-banner {
-  background: linear-gradient(135deg, #1d4ed8, #3b82f6);
-}
-
-.orange-banner {
-  background: linear-gradient(135deg, #b45309, #f59e0b);
-}
-
-/* Fix inner padding since we removed it from the main card */
 .course-card .job-title,
 .course-card .course-subtitle,
 .course-card .course-benefits,
@@ -499,7 +481,6 @@
   line-height: 1.8;
 }
 
-/* Custom dot for bullet points */
 .course-benefits li::before {
   content: "•";
   color: #94a3b8;
@@ -509,7 +490,6 @@
   margin-left: -1em;
 }
 
-/* Bottom Skills & Button area */
 .course-footer {
   display: flex;
   flex-direction: column;
@@ -530,45 +510,13 @@
 .course-card .view-details {
   text-align: center;
   width: fit-content;
+  font-size: 15px;
+  margin-top: 10px;
 }
 
-.btn-green {
-  background: linear-gradient(90deg, #059669, #10b981);
-  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
-}
 
-.neon-green {
-  box-shadow: inset 0 -40px 60px -40px rgba(16, 185, 129, 0.5), 0 10px 30px rgba(0, 0, 0, 0.1);
-}
 
-.btn-pink {
-  background: linear-gradient(90deg, #be123c, #f43f5e);
-  box-shadow: 0 4px 15px rgba(244, 63, 94, 0.4);
-}
-
-.neon-pink {
-  box-shadow: inset 0 -40px 60px -40px rgba(244, 63, 94, 0.5), 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.btn-blue {
-  background: linear-gradient(90deg, #1d4ed8, #3b82f6);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
-}
-
-.neon-blue {
-  box-shadow: inset 0 -40px 60px -40px rgba(59, 130, 246, 0.5), 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.btn-orange {
-  background: linear-gradient(90deg, #b45309, #f59e0b);
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
-}
-
-.neon-orange {
-  box-shadow: inset 0 -40px 60px -40px rgba(245, 158, 11, 0.5), 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-/* --- HACKATHONS & BUILDATHONS SECTION --- */
+/* ---hackothon-section--- */
 .events-section {
   padding: 60px;
   font-family: 'Inter', sans-serif;
@@ -579,12 +527,16 @@
 }
 
 .section-subtitle {
-  color: #94a3b8;
+  background: linear-gradient(90deg, #8c8eef, #bd7afb);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  width: fit-content;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: #000000;
   font-size: 16px;
   margin-top: 5px;
 }
 
-/* Event Card Specific Adjustments */
 .event-card {
   justify-content: space-between;
 }
@@ -596,7 +548,6 @@
   margin-bottom: 25px;
 }
 
-/* Calendar Date Badge */
 .date-badge {
   display: flex;
   flex-direction: column;
@@ -625,7 +576,7 @@
 }
 
 .purple-badge {
-  background: linear-gradient(135deg, #6366f1, #a855f7);
+  background: linear-gradient(135deg, #ff5454, #ff3838);
 }
 
 .blue-badge {
@@ -640,7 +591,6 @@
   background: linear-gradient(135deg, #b45309, #f59e0b);
 }
 
-/* Live Status Indicator */
 .event-status {
   display: flex;
   align-items: center;
@@ -681,7 +631,6 @@
   }
 }
 
-/* Event Details Grid (Theme, Team Size, Prize) */
 .event-details-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -712,47 +661,30 @@
 
 .prize-pool .e-value {
   color: #f59e0b;
-  /* Golden Yellow for Prize */
   font-weight: 700;
   font-size: 16px;
 }
 
-/* Specific Event Buttons */
-.btn-purple {
-  background: linear-gradient(90deg, #6366f1, #a855f7);
-  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.4);
+.register-btn {
+  font-size: 12px;
+  width: fit-content;
 }
 
-.btn-blue {
-  background: linear-gradient(90deg, #1d4ed8, #3b82f6);
-  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
-}
-
-.btn-green {
-  background: linear-gradient(90deg, #059669, #10b981);
-  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
-}
-
-.btn-orange {
-  background: linear-gradient(90deg, #b45309, #f59e0b);
-  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
-}
-
-/* --- TESTIMONIALS SECTION --- */
-
-/* Specific layout adjustments for the testimonial card */
 .testimonial-card {
   display: flex;
   flex-direction: column;
   position: relative;
-  padding-top: 50px;
+  padding-top: 0;
 }
 
 .quote-icon {
-  position: absolute;
-  top: 30px;
-  left: 35px;
-  opacity: 0.5;
+  font-size: 80px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 2px white;
+  line-height: 1;
+  margin: 0;
 }
 
 .quote-text {
@@ -762,10 +694,8 @@
   font-style: italic;
   margin: 25px 0 30px 0;
   flex-grow: 1;
-  /* Pushes the profile info to the bottom */
 }
 
-/* User Profile Row */
 .user-profile {
   display: flex;
   align-items: center;
@@ -794,10 +724,9 @@
   margin: 0;
 }
 
-/* Hired By Badge */
 .hired-badge {
   padding: 12px;
-  border-radius: 12px;
+  border-radius: 50px;
   font-size: 14px;
   text-align: center;
   font-weight: 500;
@@ -809,160 +738,172 @@
   letter-spacing: 0.5px;
 }
 
-.badge-purple {
-  background-color: rgba(168, 85, 247, 0.15);
-  border: 1px solid rgba(168, 85, 247, 0.3);
-}
-
-.badge-blue {
-  background-color: rgba(59, 130, 246, 0.15);
-  border: 1px solid rgba(59, 130, 246, 0.3);
-}
-
-.badge-green {
-  background-color: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-}
-
+.badge-purple,
+.badge-blue,
+.badge-green,
 .badge-orange {
-  background-color: rgba(245, 158, 11, 0.15);
-  border: 1px solid rgba(245, 158, 11, 0.3);
+  background: linear-gradient(90deg, #63bff1, #2b97fc);
+  border: solid white 2px;
+  box-shadow: none;
+  border-radius: 15px;
 }
 
-/* --- FLOATING ISLAND FOOTER --- */
-.floating-footer {
-    position: relative;
-    padding: 0 40px 40px 40px; /* Space around the floating box */
-    font-family: 'Inter', sans-serif;
+/* =========================================
+   TABLET & MOBILE RESPONSIVENESS 
+   ========================================= */
+
+/* --- TABLET SCREENS (Under 1024px) --- */
+@media (max-width: 1024px) {
+  /* Shrink the massive hero text */
+  .hero-title {
+    font-size: 100px;
+    width: 100%;
+  }
+  
+  /* Pull the image back into view */
+  .hero-person-img {
+    margin-left: -150px;
+    max-width: 550px;
+  }
+
+  /* Adjust section titles */
+  .section-title {
+    font-size: 55px;
+  }
+
+  /* Fix Hiring Section spacing */
+  .hiring-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 60px 40px;
+  }
+  
+  .hiring-title, .demo-button {
+    margin-left: 50px; /* Reduces the huge 220px margin */
+  }
+  
+  .hiring-image-container img {
+    margin-left: 0;
+    max-width: 400px;
+  }
 }
 
-/* The Black Rounded Box */
-.footer-container {
-    background-color: #050505; /* Deep black to match the image */
-    border-radius: 40px;
-    padding: 60px 60px 30px 60px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-/* Columns Layout */
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-bottom: 50px;
-}
-
-.footer-col {
-    display: flex;
+/* --- MOBILE PHONES (Under 768px) --- */
+@media (max-width: 768px) {
+  /* 1. HERO SECTION STACKS */
+  .hero-section {
     flex-direction: column;
-    gap: 15px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 60px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .hero-search-container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .hired-badge {
+    margin-top: 20px;
+  }
+
+  .hero-person-img {
+    margin-left: 0; /* Resets the -500px desktop margin */
+    margin-top: 30px;
+    max-width: 100%;
+  }
+
+  .floating-badge {
+    top: 20px;
+    right: 10px;
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+  }
+
+  /* 2. GENERAL SECTIONS (Reduce Padding & Text) */
+  .fresher-jobs-section, .courses-section, .events-section {
+    padding: 30px 20px;
+  }
+
+  .section-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  /* 3. JOB CARDS (Shrink from 400px to fit mobile screens) */
+
+  .filter-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
 }
 
-.brand-col {
-    max-width: 300px;
+  .filter-chip {
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  background: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+  .job-card {
+    flex: 0 0 300px;
+    width: 300px;
+    padding: 25px;
+  }
 
-.footer-brand {
-    margin-bottom: 10px;
-}
+  .job-title {
+    font-size: 24px;
+    width: 100%;
+  }
 
-.footer-tagline {
-    color: #94a3b8;
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 0 0 20px 0;
-}
+  .view-details {
+    width: 100%; /* Makes button stretch across card */
+    padding: 12px 0;
+  }
 
-.footer-col h4 {
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0 0 10px 0;
-}
+  .course-features-row {
+    flex-direction: column; /* Stacks the pills */
+  }
 
-.footer-col a {
-    color: #cbd5e1;
-    font-size: 14px;
-    font-weight: 500;
-    transition: color 0.3s ease, transform 0.2s ease;
-}
+  /* 4. HIRING SECTION (Stacking and removing massive desktop margins) */
+  .hiring-section {
+    flex-direction: column;
+    margin: 50px 20px;
+    padding: 40px 20px;
+    border-radius: 30px;
+    text-align: center;
+  }
 
-.footer-col a:hover {
-    color: #a855f7;
-    transform: translateX(3px); /* Small slide effect on hover */
-}
-
-/* Footer Socials inside the brand column */
-.footer-socials {
-    display: flex;
-    gap: 12px;
-}
-
-.footer-socials a {
-    width: 36px;
-    height: 36px;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 50%;
-    display: flex;
+  .hiring-content {
+    padding-left: 0;
     align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: 700;
-    color: #94a3b8;
-}
+  }
 
-.footer-socials a:hover {
-    background: linear-gradient(90deg, #6366f1, #a855f7);
-    color: #ffffff;
-    transform: translateY(-3px);
-}
+  .hiring-image-container img {
+    display: none;
+  }
 
-/* Bottom Copyright Section */
-.footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+  .hiring-title {
+    font-size: 45px;
+    margin: 0 0 30px 0; /* Resets the 220px left margin */
+  }
 
-.footer-bottom p {
-    color: #64748b;
-    font-size: 13px;
-    margin: 0;
-}
-
-/* --- GLOWING SCROLL-TO-TOP BUTTON --- */
-.scroll-top-btn {
-    position: absolute;
-    bottom: 80px; /* Floats above the bottom */
-    right: 20px; /* Sits on the right edge */
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, #6366f1, #a855f7);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    z-index: 10;
-}
-
-.scroll-top-btn svg {
-    width: 24px;
-    height: 24px;
-    transition: transform 0.3s ease;
-}
-
-.scroll-top-btn:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(168, 85, 247, 0.7);
-}
-
-.scroll-top-btn:hover svg {
-    transform: translateY(-3px); /* Arrow jumps up slightly on hover */
+  .demo-button {
+    margin-left: 0; /* Resets the 220px left margin */
+  }
 }
