@@ -7,43 +7,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./login.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/login.css">
 </head>
 
 <body>
+    <main class="auth-layout">
+        <div class="loginBox auth-card">
+            <img class="brand-logo" src="./assests/logo.svg" alt="Where Is My Job">
+            <div class="form-intro">
+                <span class="eyebrow">Welcome back</span>
+                <h2>Login into your account</h2>
+                <p>Pick up where your next opportunity starts.</p>
+            </div>
 
-    <div class="loginBox">
-        <h2>Login into your account</h2>
+            <div class="loginBox_email">
+                <p>Email</p>
+                <input id="login_mail" type="text" placeholder="Enter your email here" required>
+            </div>
 
-        <div class="loginBox_email">
-            <p>Email</p>
-            <input id="login_mail" type="text" placeholder="Enter your email here" required>
+            <div class="loginBox_pass">
+                <p>Password</p>
+                <input id="login_pass" type="password" placeholder="Enter your password" required>
+            </div>
+
+            <div class="loginBox_btn">
+                <button id="login_btn" class="login_btn">Login now</button>
+            </div>
+
+            <div class="loginBox_error">
+                <p>email or password is incorrect</p>
+            </div>
+
+            <div class="loginBox_signup">
+                <p>don't have an account <span><a href="./pages/register.html">sign up</a></span></p>
+            </div>
         </div>
 
-        <div class="loginBox_pass">
-            <p>Password</p>
-            <input id="login_pass" type="password" placeholder="Enter your password" required>
-        </div>
+        <aside class="auth-art" aria-hidden="true">
+            <span class="art-label">WHERE IS MY JOB ?</span>
+            <div class="art-copy">
+                <span class="eyebrow">Make your move</span>
+                <h1>Find work that feels like forward.</h1>
+            </div>
+            <div class="art-window art-window--small">
+                <span>OPEN ROLES</span>
+                <strong>176,18</strong>
+                <i></i><i></i><i></i>
+            </div>
+            <div class="art-window art-window--large">
+                <span>YOUR NEXT CHAPTER</span>
+                <strong>Ready when you are.</strong>
+                <div class="art-line"></div>
+            </div>
+            <div class="art-spark">+</div>
+            <div class="art-circle"></div>
+        </aside>
+    </main>
 
-        <div class="loginBox_btn">
-            <button id="login_btn" class="login_btn">Login now</button>
-        </div>
-
-        <div class="loginBox_error">
-            <p>email or password is incorrect</p>
-
-        </div>
-
-        <div class="loginBox_signup">
-            <p>don't have a account <span><a href="./register.html">sign up</a></span></p>
-        </div>
-
-    </div>
-
-<script src="./login.js"></script>
+    <script src="./scripts/login.js"></script>
 </body>
 
 </html>
