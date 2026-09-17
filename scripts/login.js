@@ -10,7 +10,7 @@ loginBtn.addEventListener("click", function () {
   if (enteredEmail === "user@gmail.com" && enteredPassword === "123456") {
 
     loginError.style.display = "none";
-    window.location.href = "./home.html";
+    window.location.href = "../pages/home.html";
 
   } else {
 
