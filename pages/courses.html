@@ -1,11 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Courses | Where Is My Job</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&family=Poppins&family=Prata&family=Share+Tech&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/courses.css">
 </head>
+
 <body>
-    
+    <nav class="navbar">
+        <div class="nav-logo"><img src="../assests/logo.svg" alt="Where Is My Job Logo" class="logo"></div>
+        <ul class="nav-links">
+            <li><a href="../pages/home.html">HOME</a></li>
+            <li><a href="../pages/jobs.html">JOBS</a></li>
+            <li><a href="../pages/companies.html">COMPANIES</a></li>
+            <li><a href="../pages/courses.html">COURSES</a></li>
+            <li><a href="../pages/contact.html">CONTACT</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="nav-lang"><span>EN</span><span aria-hidden="true">⌄</span></div>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span class="menu-icon">☰</span></button>
+    </nav>
+
+    <!-- Main course catalog -->
+    <main class="courses-page">
+        <section class="courses-section" aria-labelledby="courses-title">
+            <div class="courses-heading">
+                <div>
+                    <h1 class="section-title" id="courses-title">ONLINE COURSES</h1>
+                    <p class="courses-intro">Build practical skills, ship real projects, and get closer to your next
+                        opportunity.</p>
+                </div>
+                <div class="course-features-row"><span class="feature-pill">✓ Real world projects</span><span
+                        class="feature-pill">✓ Unlimited AI mock interviews</span><span class="feature-pill">✓ Placement
+                        assistance</span></div>
+            </div>
+
+            <!-- Filters and course results -->
+            <div class="catalog-layout">
+                <!-- Filter controls -->
+                <aside class="filter-panel" aria-label="Course filters">
+                    <div class="filter-panel-header">
+                        <h2>FILTER COURSES</h2><button type="button" id="clearFilters"
+                            class="clear-filters">CLEAR</button>
+                    </div>
+                    <label class="catalog-search" for="courseSearch"><span>SEARCH</span><input id="courseSearch"
+                            type="search" placeholder="Search courses or skills" autocomplete="off"></label>
+                    <fieldset>
+                        <legend>CATEGORY</legend><label><input type="checkbox" name="category" value="data"> Data &amp;
+                            Analytics</label><label><input type="checkbox" name="category" value="ai"> AI &amp; Machine
+                            Learning</label><label><input type="checkbox" name="category" value="development"> Web
+                            Development</label><label><input type="checkbox" name="category" value="design">
+                            Design</label><label><input type="checkbox" name="category" value="systems"> Systems &amp;
+                            Cloud</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>LEVEL</legend><label><input type="checkbox" name="level" value="beginner">
+                            Beginner</label><label><input type="checkbox" name="level" value="intermediate">
+                            Intermediate</label><label><input type="checkbox" name="level" value="advanced">
+                            Advanced</label>
+                    </fieldset>
+                </aside>
+
+                <!-- Course results -->
+                <div class="catalog-results">
+                    <div class="results-toolbar">
+                        <p id="resultsCount" aria-live="polite">Showing all courses</p>
+                    </div>
+                    <div class="course-grid" id="courseGrid">
+                        <article class="job-card course-card neon-green" data-category="data" data-level="beginner"
+                            data-search="data science python sql tableau analytics">
+                            <div class="course-banner green-banner"><img src="../assests/data-science.png"
+                                    alt="Data science illustration"></div>
+                            <h3 class="job-title">Data Science</h3>
+                            <p class="course-subtitle">with Placement Assistance</p>
+                            <ul class="course-benefits">
+                                <li>Master 10+ in-demand skills &amp; tools</li>
+                                <li>Unlimited mock AI interviews</li>
+                                <li>Priority access to top opportunities</li>
+                            </ul>
+                            <div class="course-footer">
+                                <p class="skills-text">Skills: Python, SQL, Tableau</p><a href="#"
+                                    class="view-details btn-green">KNOW MORE &gt;</a>
+                            </div>
+                        </article>
+                        <article class="job-card course-card neon-pink" data-category="ai" data-level="intermediate"
+                            data-search="artificial intelligence machine learning tensorflow pytorch deep learning">
+                            <div class="course-banner pink-banner"><img src="../assests/AI.png"
+                                    alt="Artificial intelligence illustration"></div>
+                            <h3 class="job-title">Artificial Intelligence &amp; Machine Learning</h3>
+                            <p class="course-subtitle">with Placement Assistance</p>
+                            <ul class="course-benefits">
+                                <li>Master 9+ in-demand skills &amp; tools</li>
+                                <li>Unlimited mock AI interviews</li>
+                                <li>Priority access to top opportunities</li>
+                            </ul>
+                            <div class="course-footer">
+                                <p class="skills-text">Skills: TensorFlow, PyTorch</p><a href="#"
+                                    class="view-details btn-pink">KNOW MORE &gt;</a>
+                            </div>
+                        </article>
+                        <article class="job-card course-card neon-blue" data-category="development"
+                            data-level="beginner"
+                            data-search="full stack web development react node tailwind javascript">
+                            <div class="course-banner blue-banner"><img src="../assests/full-stack.png"
+                                    alt="Full stack development illustration"></div>
+                            <h3 class="job-title">Full Stack Web Development</h3>
+                            <p class="course-subtitle">with Placement Assistance</p>
+                            <ul class="course-benefits">
+                                <li>Master 8+ in-demand skills &amp; tools</li>
+                                <li>Build live production projects</li>
+                                <li>Priority access to top opportunities</li>
+                            </ul>
+                            <div class="course-footer">
+                                <p class="skills-text">Skills: React, Node, Tailwind</p><a href="#"
+                                    class="view-details btn-blue">KNOW MORE &gt;</a>
+                            </div>
+                        </article>
+                        <article class="job-card course-card neon-orange" data-category="systems" data-level="advanced"
+                            data-search="embedded systems iot c++ microcontrollers hardware firmware">
+                            <div class="course-banner orange-banner"><img src="../assests/UI-UX.png"
+                                    alt="Embedded systems illustration"></div>
+                            <h3 class="job-title">Embedded Systems &amp; IoT</h3>
+                            <p class="course-subtitle">with Placement Assistance</p>
+                            <ul class="course-benefits">
+                                <li>Hardware &amp; firmware integration</li>
+                                <li>Live IoT device building</li>
+                                <li>Priority access to top opportunities</li>
+                            </ul>
+                            <div class="course-footer">
+                                <p class="skills-text">Skills: C++, Microcontrollers</p><a href="#"
+                                    class="view-details btn-orange">KNOW MORE &gt;</a>
+                            </div>
+                        </article>
+                        <article class="job-card course-card neon-purple" data-category="design" data-level="beginner"
+                            data-search="ui ux product design figma prototyping user experience">
+                            <div class="course-banner purple-banner"><img src="../assests/UI-UX.png"
+                                    alt="UI UX design illustration"></div>
+                            <h3 class="job-title">UI/UX Product Design</h3>
+                            <p class="course-subtitle">with Placement Assistance</p>
+                            <ul class="course-benefits">
+                                <li>Design user-centered digital products</li>
+                                <li>Build a portfolio that gets noticed</li>
+                                <li>Practice with industry briefs</li>
+                            </ul>
+                            <div class="course-footer">
+                                <p class="skills-text">Skills: Figma, UX Research</p><a href="#"
+                                    class="view-details btn-purple">KNOW MORE &gt;</a>
+                            </div>
+                        </article>
+                        <article class="job-card course-card neon-blue" data-category="systems"
+                            data-level="intermediate" data-search="cloud devops aws docker kubernetes infrastructure">
+                            <div class="course-banner blue-banner"><img src="../assests/full-stack.png"
+                                    alt="Cloud engineering illustration"></div>
+                            <h3 class="job-title">Cloud &amp; DevOps Engineering</h3>
+                            <p class="course-subtitle">with Placement Assistance</p>
+                            <ul class="course-benefits">
+                                <li>Deploy reliable cloud applications</li>
+                                <li>Automate modern delivery pipelines</li>
+                                <li>Work on production-like projects</li>
+                            </ul>
+                            <div class="course-footer">
+                                <p class="skills-text">Skills: AWS, Docker, Kubernetes</p><a href="#"
+                                    class="view-details btn-blue">KNOW MORE &gt;</a>
+                            </div>
+                        </article>
+                        <article class="job-card course-card neon-green" data-category="data" data-level="intermediate"
+                            data-search="business analytics power bi excel sql visualization">
+                            <div class="course-banner green-banner"><img src="../assests/data-science.png"
+                                    alt="Business analytics illustration"></div>
+                            <h3 class="job-title">Business Analytics</h3>
+                            <p class="course-subtitle">with Placement Assistance</p>
+                            <ul class="course-benefits">
+                                <li>Turn business questions into insights</li>
+                                <li>Create decision-ready dashboards</li>
+                                <li>Learn from practical case studies</li>
+                            </ul>
+                            <div class="course-footer">
+                                <p class="skills-text">Skills: Power BI, Excel, SQL</p><a href="#"
+                                    class="view-details btn-green">KNOW MORE &gt;</a>
+                            </div>
+                        </article>
+                        <article class="job-card course-card neon-pink" data-category="development"
+                            data-level="advanced" data-search="backend engineering java python api databases software">
+                            <div class="course-banner pink-banner"><img src="../assests/AI.png"
+                                    alt="Backend engineering illustration"></div>
+                            <h3 class="job-title">Backend Engineering</h3>
+                            <p class="course-subtitle">with Placement Assistance</p>
+                            <ul class="course-benefits">
+                                <li>Build scalable APIs and services</li>
+                                <li>Learn robust database patterns</li>
+                                <li>Prepare for technical interviews</li>
+                            </ul>
+                            <div class="course-footer">
+                                <p class="skills-text">Skills: Java, Python, APIs</p><a href="#"
+                                    class="view-details btn-pink">KNOW MORE &gt;</a>
+                            </div>
+                        </article>
+                    </div>
+                    <p class="empty-state" id="emptyState" hidden>No courses match those filters. Try clearing one or
+                        two options.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="floating-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col brand-col"><img src="../assests/footer-logo.svg" alt="Where Is My Job"
+                        class="footer-img">
+                    <p class="footer-tagline">Your ultimate platform to find top tech roles, internships, and
+                        buildathons.</p>
+                    <div class="footer-socials"><a href="#" aria-label="Instagram">◎</a><a href="#"
+                            aria-label="LinkedIn">in</a><a href="#" aria-label="Twitter / X">X</a></div>
+                </div>
+                <div class="footer-col">
+                    <h4>Job Seekers</h4><a href="#">Search Jobs</a><a href="#">Internships</a><a
+                        href="courses.html">Online Courses</a><a href="#">Hackathons</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Employers</h4><a href="#">Post a Job</a><a href="#">Search Resumes</a><a href="#">Request
+                        Demo</a><a href="#">Pricing</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4><a href="#">About Us</a><a href="contact.html">Contact Us</a><a href="#">Privacy
+                        Policy</a><a href="#">Terms &amp; Conditions</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Where Is My Job. All rights reserved.</p>
+            </div><a href="#" class="scroll-top-btn" aria-label="Scroll to top">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                    <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+            </a>
+        </div>
+    </footer>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/courses.js"></script>
 </body>
+
 </html>
