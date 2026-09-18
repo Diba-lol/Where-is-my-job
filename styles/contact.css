@@ -429,15 +429,6 @@ footer a {
         width: 240px;
     }
 
-    .nav-links {
-        gap: 15px;
-        font-size: 0.85rem;
-    }
-
-    .nav-actions {
-        gap: 8px;
-    }
-
     .btn-outline {
         padding: 8px 12px;
     }
@@ -474,27 +465,6 @@ footer a {
 
     .nav-logo .logo {
         width: 220px;
-    }
-
-    .nav-actions {
-        display: none;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 12px;
-        order: 3;
-    }
-
-    .nav-links.active {
-        display: flex;
     }
 
     .intro {

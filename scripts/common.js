@@ -6,6 +6,10 @@
         const navLinks = document.querySelector(".nav-links");
         const navAccount = document.querySelector(".nav-account");
 
+        if (!menuToggle || !navbar || !icon || !navLinks) {
+            return;
+        }
+
         menuToggle.addEventListener("click", (e) => {
             navbar.classList.toggle("active");
             
@@ -21,7 +25,7 @@
             
             if (navbar.classList.contains("active") && 
                 !navLinks.contains(e.target) && 
-                !navAccount.contains(e.target) && 
+                (!navAccount || !navAccount.contains(e.target)) &&
                 !menuToggle.contains(e.target)) {
                 
                 navbar.classList.remove("active");
