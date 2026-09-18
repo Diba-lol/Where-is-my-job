@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jobs | Where is my job</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&family=Poppins&family=Prata&family=Share+Tech&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/jobs.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="../assests/logo.svg" alt="Where Is My Job Logo" class="logo">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../pages/home.html">HOME</a></li>
+      <li><a href="../pages/jobs.html">JOBS</a></li>
+      <li><a href="../pages/companies.html">COMPANIES</a></li>
+      <li><a href="../pages/courses.html">COURSES</a></li>
+      <li><a href="../pages/contact.html">CONTACT</a></li>
+    </ul>
+
+    <div class="nav-account">
+      <div class="nav-actions">
+        <i class="fa-regular fa-user"></i>
+      </div>
+      <div class="account">
+        <p>ACCOUNT</p>
+      </div>
+    </div>
+    <button class="menu-toggle" id="menuToggle">
+      <span class="menu-icon">☰</span>
+    </button>
+  </nav>
+
+  <section class="jobs-page-wrapper">
+
+    <aside class="jobs-sidebar">
+
+      <!-- 1. Search Bar -->
+      <div class="filter-group">
+        <h3 class="filter-title">Search Jobs</h3>
+        <input type="text" id="jobSearch" class="search-input" placeholder="e.g. Developer, Google...">
+      </div>
+
+      <!-- 2. Categories (Radio Style) -->
+      <div class="filter-group">
+        <h3 class="filter-title">Categories</h3>
+        <div class="chip-filter-container">
+          <label class="chip-label-check">
+            <input type="radio" name="category" value="engineering">
+            <span class="chip-text">Engineering</span>
+          </label>
+          <label class="chip-label-check">
+            <input type="radio" name="category" value="data-science">
+            <span class="chip-text">Data Science</span>
+          </label>
+          <label class="chip-label-check">
+            <input type="radio" name="category" value="cloud">
+            <span class="chip-text">Cloud & DevOps</span>
+          </label>
+          <label class="chip-label-check">
+            <input type="radio" name="category" value="design">
+            <span class="chip-text">UI/UX Design</span>
+          </label>
+          <label class="chip-label-check">
+            <input type="radio" name="category" value="media">
+            <span class="chip-text">Media</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- 3. Job Type (Radio Style) -->
+      <div class="filter-group">
+        <h3 class="filter-title">Job Type</h3>
+        <div class="chip-filter-container">
+          <label class="chip-label-check">
+            <input type="radio" name="jobtype" value="full-time">
+            <span class="chip-text">Full-Time</span>
+          </label>
+          <label class="chip-label-check">
+            <input type="radio" name="jobtype" value="part-time">
+            <span class="chip-text">Part-Time</span>
+          </label>
+          <label class="chip-label-check">
+            <input type="radio" name="jobtype" value="internship">
+            <span class="chip-text">Internship</span>
+          </label>
+          <label class="chip-label-check">
+            <input type="radio" name="jobtype" value="wfh">
+            <span class="chip-text">Work from Home</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- 4. Experience Level (Chip + Radio) -->
+      <div class="filter-group" id="expFilters">
+        <h3 class="filter-title">Experience</h3>
+        <div class="chip-filter-container">
+          <label class="chip-label-check">
+            <input type="radio" name="exp" value="fresher">
+            <span class="chip-text">Fresher</span>
+          </label>
+          <label class="chip-label-check">
+            <input type="radio" name="exp" value="1-3">
+            <span class="chip-text">1 - 3 Years</span>
+          </label>
+          <label class="chip-label-check">
+            <input type="radio" name="exp" value="3-5">
+            <span class="chip-text">3 - 5 Years</span>
+          </label>
+          <label class="chip-label-check">
+            <input type="radio" name="exp" value="5plus">
+            <span class="chip-text">5+ Years</span>
+          </label>
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- RIGHT SIDE: Job Cards List -->
+    <main class="jobs-list-container">
+
+      <main class="jobs-list-container">
+
+        <!-- 1. Intel -->
+        <div class="job-card-exact-dark" data-category="engineering">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>Embedded Systems & IoT Engineer</h2>
+              <p class="company-name">Intel</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Bengaluru, KA</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹18,00,000 - 24,00,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> 1 - 3 Years</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Full-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Develop and optimize firmware for IoT edge devices, utilizing hardware-software co-design principles...
+              </p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 1 day ago</span>
+              <span class="badge-early"><i class="fa-solid fa-sun"></i> Be an early applicant</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/intel.svg" alt="Intel" class="company-logo">
+            <a href="job-details.html?job=intel" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 2. Zoho -->
+        <div class="job-card-exact-dark" data-category="engineering design">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>Front-End Web Developer</h2>
+              <p class="company-name">Zoho</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Chennai, TN</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹8,00,000 - 12,00,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> Fresher</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Full-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Design responsive UI layouts using advanced HTML, CSS, JavaScript, and Tailwind CSS utilities...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> Just now</span>
+              <span class="badge-early"><i class="fa-solid fa-sun"></i> Be an early applicant</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/zoho.svg" alt="Zoho" class="company-logo">
+            <a href="job-details.html?job=zoho" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 3. Google -->
+        <div class="job-card-exact-dark" data-category="engineering">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>Software Engineer, Core Systems</h2>
+              <p class="company-name">Google</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Hyderabad, TS</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹25,00,000 - 40,00,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> 3 - 5 Years</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Full-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Design, develop, test, deploy, maintain, and enhance large-scale distributed systems and cloud
+                infrastructure...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 2 days ago</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/google.svg" alt="Google" class="company-logo">
+            <a href="job-details.html?job=google" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 4. Meta -->
+        <div class="job-card-exact-dark" data-category="design engineering">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>React UI/UX Developer</h2>
+              <p class="company-name">Meta</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Gurugram, HR</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> Competitive salary</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> 5+ Years</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Full-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Build scalable and interactive user interfaces using React.js, optimizing for performance and web
+                accessibility...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 4 days ago</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/meta.svg" alt="Meta" class="company-logo">
+            <a href="job-details.html?job=meta" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 5. Apple -->
+        <div class="job-card-exact-dark" data-category="engineering">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>iOS App Developer</h2>
+              <p class="company-name">Apple</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Bengaluru, KA</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹30,00,000+ / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> 3 - 5 Years</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Full-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Collaborate with cross-functional teams to define, design, and ship new features for Apple ecosystem
+                applications...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 1 week ago</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/apple.svg" alt="Apple" class="company-logo">
+            <a href="job-details.htmljob=apple" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 6. Samsung -->
+        <div class="job-card-exact-dark" data-category="engineering">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>Hardware Research Engineer</h2>
+              <p class="company-name">Samsung</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Noida, UP</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹15,00,000 - 22,00,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> 1 - 3 Years</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Full-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Conduct digital logic simulation and system architecture verification for next-gen mobile processors...
+              </p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 3 days ago</span>
+              <span class="badge-early"><i class="fa-solid fa-sun"></i> Be an early applicant</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/samsung.svg" alt="Samsung" class="company-logo">
+            <a href="job-details.html?job=samsung" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 7. Accenture -->
+        <div class="job-card-exact-dark" data-category="cloud">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>ServiceNow System Administrator</h2>
+              <p class="company-name">Accenture</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Chennai, TN (Hybrid)</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹6,50,000 - 9,50,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> Fresher</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Part-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Looking for certified ServiceNow professionals (CSA/CAD) to manage IT service workflows and application
+                development...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 5 hours ago</span>
+              <span class="badge-early"><i class="fa-solid fa-sun"></i> Be an early applicant</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/accenture-1.svg" alt="Accenture" class="company-logo">
+            <a href="job-details.html?job=accenture" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 8. Amazon -->
+        <div class="job-card-exact-dark" data-category="cloud data-science">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>AWS Cloud Solutions Architect</h2>
+              <p class="company-name">Amazon</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Bengaluru, KA</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹28,00,000 - 45,00,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> 5+ Years</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Full-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Architect robust, scalable, and secure cloud environments leveraging AWS services and data science
+                pipelines...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 1 day ago</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/amazon-1.svg" alt="Amazon" class="company-logo">
+            <a href="job-details.html?job=amazon" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 9. Cognizant -->
+        <div class="job-card-exact-dark" data-category="engineering">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>Full Stack Java Developer</h2>
+              <p class="company-name">Cognizant</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Pune, MH</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹7,00,000 - 10,00,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> 1 - 3 Years</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Full-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Develop enterprise web applications utilizing Java, Spring Boot, MySQL Database Management Systems, and
+                REST APIs...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 2 days ago</span>
+              <span class="badge-early"><i class="fa-solid fa-sun"></i> Be an early applicant</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/cognizants.svg" alt="Cognizant" class="company-logo">
+            <a href="job-details.html?job=cognizant" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 10. GlobalNet -->
+        <div class="job-card-exact-dark" data-category="cloud">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>Network Infrastructure Engineer</h2>
+              <p class="company-name">GlobalNet Systems</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Anywhere in India</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹10,00,000 - 15,00,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> 3 - 5 Years</span>
+              <span class="meta-item"><i class="fa-solid fa-house-laptop"></i> Work from Home</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Manage and troubleshoot routing, switching, and firewall security policies across distributed corporate
+                networks...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 3 hours ago</span>
+              <span class="badge-early"><i class="fa-solid fa-sun"></i> Be an early applicant</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/global-net.svg" alt="GlobalNet" class="company-logo">
+            <a href="job-details.html?job=globalnet" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 11. StudioV -->
+        <div class="job-card-exact-dark" data-category="media design">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>Creative Media Graphic Designer</h2>
+              <p class="company-name">StudioV</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Mumbai, MH</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹5,00,000 - 8,00,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> Fresher</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Internship</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Produce visually stunning marketing materials, social media graphics, and brand identity assets using
+                Adobe Creative Suite...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 5 days ago</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/studio.svg" alt="StudioV" class="company-logo">
+            <a href="job-details.html?job=studiov" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 12. Lenskart -->
+        <div class="job-card-exact-dark" data-category="data-science">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>Data Analytics Engineer</h2>
+              <p class="company-name">Lenskart</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Delhi, NCR</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹12,00,000 - 18,00,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> 1 - 3 Years</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Full-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Analyze e-commerce consumer behavior data using Python and machine learning to drive product
+                recommendations...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 2 days ago</span>
+              <span class="badge-early"><i class="fa-solid fa-sun"></i> Be an early applicant</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/lenskart-1.svg" alt="Lenskart" class="company-logo">
+            <a href="job-details.html?job=lenskart" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+        <!-- 13. Infosys -->
+        <div class="job-card-exact-dark" data-category="cloud">
+          <div class="card-left-content">
+            <div class="title-section">
+              <h2>Cybersecurity Operations Analyst</h2>
+              <p class="company-name">Infosys</p>
+            </div>
+            <div class="job-meta-info">
+              <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Chennai, TN</span>
+              <span class="meta-item"><i class="fa-regular fa-money-bill-1"></i> ₹4,50,000 - 7,00,000 / year</span>
+              <span class="meta-item"><i class="fa-solid fa-briefcase"></i> Fresher</span>
+              <span class="meta-item"><i class="fa-solid fa-clock"></i> Full-Time</span>
+            </div>
+            <div class="job-desc-snippet">
+              <i class="fa-regular fa-file-lines"></i>
+              <p>Monitor security information and event management (SIEM) tools, respond to incidents, and conduct
+                threat hunting...</p>
+            </div>
+            <div class="card-footer-badges">
+              <span class="badge-days"><i class="fa-solid fa-clock-rotate-left"></i> 6 hours ago</span>
+              <span class="badge-early"><i class="fa-solid fa-sun"></i> Be an early applicant</span>
+            </div>
+          </div>
+          <div class="card-right-section">
+            <img src="../assests/infosys.svg" alt="Infosys" class="company-logo">
+            <a href="job-details.html?job=infosys" class="view-btn">VIEW DETAILS ></a>
+          </div>
+        </div>
+
+      </main>
+
+    </main>
+  </section>
+
+  <footer class="floating-footer">
+    <div class="footer-container">
+
+      <div class="footer-content">
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <!-- Image is now cleanly sized without absolute positioning -->
+          <img src="..//assests/logo.svg" alt="Where Is My Job" class="footer-img">
+          <p class="footer-tagline">Your ultimate platform to find top tech roles, internships, and buildathons.</p>
+
+          <div class="footer-socials">
+            <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-linkedin-in" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-x-twitter" style="color: rgb(255, 255, 255);"></i>
+          </div>
+        </div>
+
+        <!-- Column 2: Job Seekers -->
+        <div class="footer-col">
+          <h4>Job Seekers</h4>
+          <a href="#">Search Jobs</a>
+          <a href="#">Internships</a>
+          <a href="#">Online Courses</a>
+          <a href="#">Hackathons</a>
+        </div>
+
+        <!-- Column 3: Employers -->
+        <div class="footer-col">
+          <h4>Employers</h4>
+          <a href="#">Post a Job</a>
+          <a href="#">Search Resumes</a>
+          <a href="#">Request Demo</a>
+          <a href="#">Pricing</a>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Where Is My Job. All rights reserved.</p>
+      </div>
+
+      <a href="#" class="scroll-top-btn" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/jobs.js"></script>
+
+</body>
+
+</html>

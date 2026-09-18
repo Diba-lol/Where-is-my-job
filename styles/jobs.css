@@ -1,0 +1,362 @@
+.jobs-page-wrapper {
+  display: flex;
+  gap: 32px;
+  padding: 40px 5%;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: flex-start;
+  position: relative;
+}
+
+.jobs-sidebar {
+   font-family: 'Poppins', sans-serif;
+  width: 280px;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  position: sticky;
+  top: 30px;
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.jobs-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.jobs-sidebar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.jobs-sidebar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.jobs-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #a855f7;
+}
+
+.filter-group {
+  margin-bottom: 22px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 16px;
+}
+
+.filter-group:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.filter-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #1e293b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* --- Search Box --- */
+
+.search-input {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  border-color: #a855f7;
+}
+
+
+.chip-filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chip-label-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.chip-label-check:hover {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  border-color: #a855f7;
+}
+
+.chip-label-check input[type="checkbox"],
+.chip-label-check input[type="radio"] {
+  accent-color: #a855f7;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin: 0;
+}
+
+.chip-label-check .chip-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #000000;
+}
+
+
+.chip-label-check:has(input:checked) {
+  border-color: #a855f7;
+  background-color: #faf5ff;
+}
+
+.chip-label-check:has(input:checked) .chip-text {
+  color: #000000;
+}
+
+
+.jobs-list-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.job-card-exact-dark {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f1115;
+  border-radius: 16px;
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  color: #ffffff;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card-exact-dark:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+
+.card-left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+.title-section h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+  color: #ffffff;
+}
+
+.company-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #c084fc;
+  margin: 0;
+}
+
+.job-meta-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meta-item i {
+  color: #a855f7;
+}
+
+.job-desc-snippet {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+.job-desc-snippet p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 600px;
+}
+
+.card-footer-badges {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.badge-days {
+  background-color: rgba(168, 85, 247, 0.15);
+  color: #d8b4fe;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-early {
+  color: #fbbf24;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.card-right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-width: 140px;
+}
+
+.company-logo {
+  width: 64px;
+  height: 64px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 8px;
+  object-fit: contain;
+}
+
+.view-btn {
+  background-color: #a855f7;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.view-btn:hover {
+  background-color: #9333ea;
+  transform: scale(1.03);
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (MOBILE & TABLET VIEWS)
+   ========================================= */
+
+/* 1. Tablets & Small Laptops (Width 1024px அல்லது அதற்குக் கீழே) */
+@media screen and (max-width: 1024px) {
+    .jobs-page-wrapper {
+        padding: 20px 3%;
+        gap: 20px;
+    }
+
+    .jobs-sidebar {
+        width: 240px; /* சைடுபாரின் அகலத்தை லேசாகக் குறைக்கிறோம் */
+    }
+
+    .job-card-exact-dark {
+        padding: 22px 24px;
+    }
+}
+
+/* 2. Mobile & Small Tablets (Width 768px அல்லது அதற்குக் கீழே) */
+@media screen and (max-width: 768px) {
+    /* லேஅவுட்டை Column-ஆக மாற்றுதல் (சைடுபார் மேலே, கார்டுகள் கீழே வரும்) */
+    .jobs-page-wrapper {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    /* மொபைலில் சைடுபார் ஸ்டிக்கியாக இருக்கத் தேவையில்லை */
+    .jobs-sidebar {
+        width: 100%;
+        position: static;
+        max-height: none;
+        overflow-y: visible;
+        box-sizing: border-box;
+    }
+
+    /* ஜாப் கார்டுகள் மொபைலுக்கு ஏற்ப சுருங்கி விரிய */
+    .jobs-list-container {
+        width: 100%;
+    }
+
+    .job-card-exact-dark {
+        flex-direction: column; /* கார்டில் உள்ள இடது மற்றும் வலது பகுதிகள் ஒன்றன்கீழ் ஒன்றாக வரும் */
+        align-items: flex-start;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    /* மொபைலில் கம்பெனி லோகோ மற்றும் வியூ பட்டனை சரி செய்ய */
+    .card-right-section {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #222630;
+        padding-top: 14px;
+    }
+
+    .company-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .view-btn {
+        width: auto;
+        padding: 8px 16px;
+    }
+
+    .job-desc-snippet p {
+        max-width: 100%; /* மொபைல் ஸ்கிரீனுக்கு ஏற்ப டெக்ஸ்ட் அடங்கும் */
+        white-space: normal; /* தேவைப்பட்டால் அடுத்த வரிக்கு வர அனுமதிக்கலாம் */
+    }
+
+    .job-meta-info {
+        gap: 12px;
+    }
+}
