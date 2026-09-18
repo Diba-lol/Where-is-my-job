@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Application Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&family=Poppins&family=Prata&family=Share+Tech&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/appform.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+    <div class="nav-logo">
+      <img src="../assests/logo.svg" alt="Where Is My Job Logo" class="logo">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../pages/home.html">HOME</a></li>
+      <li><a href="../pages/jobs.html">JOBS</a></li>
+      <li><a href="../pages/companies.html">COMPANIES</a></li>
+      <li><a href="../pages/courses.html">COURSES</a></li>
+      <li><a href="../pages/contact.html">CONTACT</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <a href="../pages/register.html" class="btn-outline">SIGN UP</a>
+      <a href="../index.html" class="btn-outline">LOG IN</a>
+      <div class="nav-lang">
+        <span>EN</span>
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L5 5L9 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+    <button class="menu-toggle" id="menuToggle">
+      <span class="menu-icon">☰</span>
+    </button>
+  </nav>
+
+
+    <!--Application Form -->
+    <section class="application-section">
+    <div class="application-form">
+        <h1>Make Your First Move to Your Dream 🎯</h1>
+        <p>Tell us where you shine and what kind of role you want next. A real person on our talent team will review your application.</p>
+    </div>
+    <container class="form-container">
+        <form action="" class="application-form-card">
+            <div class="form-field">
+                <label for="full_name">Full Name <span>*</span></label>
+                <input id="full_name" type="text" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email ID <span>*</span></label>
+                <input id="email" type="email" placeholder="Enter your email ID" required>
+            </div>
+
+            <div class="form-field">
+                <label for="mobile_number">Mobile Number <span>*</span></label>
+                <input id="mobile_number" type="tel" placeholder="Enter your mobile number" required>
+            </div>
+
+            <div class="form-field">
+                <label for="current_city">Current Address <span>*</span></label>
+                <input id="current_city" type="text" placeholder="Enter your current address" required>
+            </div>
+
+            <div class="form-field">
+                <label for="experience">Years of experience <span>*</span></label>
+                <select id="experience" name="experience" required>
+                  <option value="" selected disabled>Choose one</option>
+                  <option>Student / Fresher</option>
+                  <option>0-2 years</option>
+                  <option>3-5 years</option>
+                  <option>6-9 years</option>
+                  <option>10+ years</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="role">Role you're after <span>*</span></label>
+                <select id="role" name="role" required>
+                  <option value="" selected disabled>Select a role</option>
+                  <option>Product & Design</option>
+                  <option>Engineering</option>
+                  <option>Data & Analytics</option>
+                  <option>Marketing & Content</option>
+                  <option>Operations & Customer Success</option>
+                  <option>Something else</option>
+                </select>
+              </div>
+
+              <fieldset class="field full">
+                <label>Preferred work style <span>*</span></label>
+                <div class="choices">
+                  <label class="choice"><input type="radio" name="work-style" value="On-site" required /><p>On-site</p></label>
+                  <label class="choice"><input type="radio" name="work-style" value="Hybrid" /><p>Hybrid</p></label>
+                  <label class="choice"><input type="radio" name="work-style" value="Remote" /><p>Remote</p></label>
+                  <label class="choice"><input type="radio" name="work-style" value="Open to all" /><p>Open to all</p></label>
+                </div>
+
+              </fieldset>
+              <div class="field full">
+                <label for="portfolio">Portfolio or LinkedIn <span class="optional">(optional)</span></label>
+                <input id="portfolio" name="portfolio" type="url" placeholder="https://linkedin.com/in/your-name" />
+              </div>
+                <div class="field full">
+                    <label for="github">GitHub or other work samples <span class="optional">(optional)</span></label>
+                    <input id="github" name="github" type="url" placeholder="https://github.com/your-name" />
+                </div>
+
+              <div class="field full">
+                <label for="resume">Resume <span>*</span></label>
+                <label class="upload" for="resume">
+                  <input id="resume" name="resume" type="file" accept=".pdf,.doc,.docx" required />
+                  <strong id="file-name">Upload your resume</strong>
+                  <span>PDF, DOC or DOCX<br />up to 10 MB</span>
+                </label>
+              </div>
+
+              <div class="field full">
+                <label for="note">Anything else we should know? <span class="optional">(optional)</span></label>
+                <textarea id="note" name="note" placeholder="A short intro, your ideal team, or a project you’re proud of."></textarea>
+              </div>
+            </div>
+
+            <div class="form-footer">
+              <p class="form-note"><strong>YOUR INFO STAYS YOURS.</strong><br />We use it only to review your application and contact you about relevant opportunities.</p>
+              <button type="submit" class="submit-btn">Submit Application</button>
+            </div>
+            <p id="form-status" class="status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+        </form>
+    
+
+
+
+
+
+
+  <footer class="floating-footer">
+    <div class="footer-container">
+        
+        <div class="footer-content">
+            <!-- Column 1: Brand -->
+            <div class="footer-col brand-col">
+                <!-- Image is now cleanly sized without absolute positioning -->
+                <img src="../assests/footer-logo.svg" alt="Where Is My Job" class="footer-img">
+                <p class="footer-tagline">Your ultimate platform to find top tech roles, internships, and buildathons.</p>
+                
+                <!-- Replaced broken FontAwesome with fail-proof SVGs -->
+                <div class="footer-socials">
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter / X">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.73 16h5L9 4z"></path><path d="M4 20l6.76-6.76"></path><path d="M20 4l-5.73 5.73"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Column 2: Job Seekers -->
+            <div class="footer-col">
+                <h4>Job Seekers</h4>
+                <a href="#">Search Jobs</a>
+                <a href="#">Internships</a>
+                <a href="#">Online Courses</a>
+                <a href="#">Hackathons</a>
+            </div>
+
+            <!-- Column 3: Employers -->
+            <div class="footer-col">
+                <h4>Employers</h4>
+                <a href="#">Post a Job</a>
+                <a href="#">Search Resumes</a>
+                <a href="#">Request Demo</a>
+                <a href="#">Pricing</a>
+            </div>
+
+            <!-- Column 4: Company -->
+            <div class="footer-col">
+                <h4>Company</h4>
+                <a href="#">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Where Is My Job. All rights reserved.</p>
+        </div>
+
+        <!-- Scroll to Top Button moved INSIDE the container for better mobile pinning -->
+        <a href="#" class="scroll-top-btn" aria-label="Scroll to top">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+            </svg>
+        </a>
+    </div>
+</footer>
+
+<script src="../scripts/common.js"></script>
+<script src="../scripts/home.js"></script>
+</body>
+</html>
