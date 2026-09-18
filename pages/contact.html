@@ -13,6 +13,10 @@
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&family=Poppins&family=Prata&family=Share+Tech&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <!-- CSS File Link -->
     <link rel="stylesheet" href="../styles/common.css">
     <link rel="stylesheet" href="../styles/contact.css">
@@ -22,26 +26,23 @@
 
     <nav class="navbar">
         <div class="nav-logo">
-            <a href="home.html">
-                <img src="../assests/logo.svg" alt="Where Is My Job Logo" class="logo">
-            </a>
+            <img src="../assests/logo.svg" alt="Where Is My Job Logo" class="logo">
         </div>
 
         <ul class="nav-links">
             <li><a href="../pages/home.html">HOME</a></li>
-            <li><a href="../pages/">JOBS</a></li>
-            <li><a href="../pages/">COMPANIES</a></li>
+            <li><a href="../pages/jobs.html">JOBS</a></li>
+            <li><a href="../pages/companies.html">COMPANIES</a></li>
             <li><a href="../pages/courses.html">COURSES</a></li>
-            <li><a href="../pages/contact.html  ">CONTACT</a></li>
+            <li><a href="../pages/contact.html">CONTACT</a></li>
         </ul>
 
-        <div class="nav-actions">
-            <div class="nav-lang">
-                <span>EN</span>
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 1L5 5L9 1" stroke="black" stroke-width="1.5" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
+        <div class="nav-account">
+            <div class="nav-actions">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="account">
+                <p>ACCOUNT</p>
             </div>
         </div>
 
@@ -232,12 +233,69 @@
         </div>
     </main>
 
-    <footer>
-        <span>©️ 2026 Where Is My Job. All rights reserved.</span>
+    <footer class="floating-footer">
+        <div class="footer-container">
+
+            <div class="footer-content">
+                <!-- Column 1: Brand -->
+                <div class="footer-col brand-col">
+                    <!-- Image is now cleanly sized without absolute positioning -->
+                    <img src="..//assests/logo.svg" alt="Where Is My Job" class="footer-img">
+                    <p class="footer-tagline">Your ultimate platform to find top tech roles, internships, and
+                        buildathons.</p>
+
+                    <div class="footer-socials">
+                        <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+                        <i class="fa-brands fa-linkedin-in" style="color: rgb(255, 255, 255);"></i>
+                        <i class="fa-brands fa-x-twitter" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                </div>
+
+                <!-- Column 2: Job Seekers -->
+                <div class="footer-col">
+                    <h4>Job Seekers</h4>
+                    <a href="#">Search Jobs</a>
+                    <a href="#">Internships</a>
+                    <a href="#">Online Courses</a>
+                    <a href="#">Hackathons</a>
+                </div>
+
+                <!-- Column 3: Employers -->
+                <div class="footer-col">
+                    <h4>Employers</h4>
+                    <a href="#">Post a Job</a>
+                    <a href="#">Search Resumes</a>
+                    <a href="#">Request Demo</a>
+                    <a href="#">Pricing</a>
+                </div>
+
+                <!-- Column 4: Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Where Is My Job. All rights reserved.</p>
+            </div>
+
+            <a href="#" class="scroll-top-btn" aria-label="Scroll to top">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                    <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+            </a>
+        </div>
     </footer>
 
     <!-- JS File Link -->
     <script src="../scripts/contact.js"></script>
+    <script src="../scripts/common.js"></script>
 
 </body>
 
