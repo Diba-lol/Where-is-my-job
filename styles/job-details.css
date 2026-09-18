@@ -1,0 +1,240 @@
+
+.job-details-container {
+  display: flex;
+  justify-content: center;
+  padding: 70px 20px;
+}
+
+.giant-job-card {
+  background-color: #000000;
+  border-radius: 25px;
+  padding: 50px;
+  width: 100%;
+  max-width: 1150px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.giant-job-card .title-with-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.giant-job-card .company-logo {
+  width: 150px;
+  object-fit: contain;
+}
+
+.giant-job-card .hiring-tag {
+  color: #e2e8f0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.job-title-large {
+  font-size: 45px;
+  line-height: 1.2;
+  margin: 15px 0 5px 0;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.giant-job-card .company-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+}
+
+.giant-job-card .job-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rich-content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 50px;
+}
+
+.info-block h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.info-block p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+
+.card-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-bullet-list li {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.card-bullet-list li::before {
+  content: "•";
+  color: #a855f7;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skills-tags span {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 18px;
+  border-radius: 50px;
+  font-size: 14px;
+  color: #93c5fd;
+}
+.card-footer-large {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.apply-btn {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 200px;
+  font-size: 21px;
+  font-weight: 700;
+  padding: 18px 100px;
+  width: 430px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -4px 0px inset;
+  transition: transform 0.2s ease;
+}
+
+.apply-btn:hover {
+  transform: scale(1.05);
+}
+
+.back-btn {
+  background: linear-gradient(90deg, #46c8f0, #16b3fb);
+  padding: 18px 40px;
+  width: fit-content;
+  margin-left: 190px;
+  margin-top: 50px;
+  border-radius: 40px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -4px 0px inset;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.back-btn:hover {
+   transform: scale(1.05);
+}
+
+
+.back-btn a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+}
+
+.apply-btn-giant:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .giant-job-card {
+    padding: 30px 20px;
+  }
+
+  .job-title-large {
+    font-size: 32px;
+  }
+
+  .giant-job-card .title-with-logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .buttons {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    width: 100%;
+  }
+
+  .apply-btn {
+    max-width: 320px;
+    margin-right: 0; 
+    padding: 15px 0; 
+  }
+
+  .back-btn {
+    width: 100%;
+    max-width: 320px;
+    margin-left: 0;
+    margin-top: 0; 
+    padding: 15px 0;
+    text-align: center; 
+  }
+}
+
+
+@media (max-width: 400px) {
+  .buttons {
+    width: 100%;
+    padding: 0 15px; 
+    box-sizing: border-box;
+  }
+
+  .apply-btn, 
+  .back-btn {
+    width: 100%; 
+    max-width: 100%;
+    box-sizing: border-box; 
+    padding: 12px 15px;
+    font-size: 16px; 
+  }
+}

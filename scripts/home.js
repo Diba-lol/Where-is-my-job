@@ -1,23 +1,42 @@
-const filterChips = document.querySelectorAll(".filter-chip");
+document.addEventListener("DOMContentLoaded", () => {
 
-filterChips.forEach((chip) => {
-    chip.addEventListener("click", () => {
+    // Select elements exactly once
+    const filterChips = document.querySelectorAll(".filter-chip");
+    const jobCards = document.querySelectorAll(".job-card");
 
-        // Remove active from all chips
-        filterChips.forEach((item) => {
-            item.classList.remove("active");
+    if (filterChips.length > 0) {
+        filterChips.forEach(chip => {
+            chip.addEventListener("click", () => {
+
+                // 1. UPDATE STYLING (Color Change)
+                filterChips.forEach(item => item.classList.remove("active"));
+                chip.classList.add("active");
+
+                // 2. SCROLL ANIMATION (Your custom code)
+                chip.scrollIntoView({
+                    behavior: "smooth",
+                    inline: "center",
+                    block: "nearest"
+                });
+
+                // 3. FILTER JOB CARDS
+                if (jobCards.length > 0) {
+                    const filterValue = chip.getAttribute("data-filter");
+
+                    jobCards.forEach(card => {
+                        const cardCategory = card.getAttribute("data-category") || "";
+
+                        if (filterValue === "all" || cardCategory.split(" ").includes(filterValue)) {
+                            card.style.display = ""; // Show card
+                        } else {
+                            card.style.display = "none"; // Hide card
+                        }
+                    });
+                }
+
+            });
         });
-
-        // Add active to clicked chip
-        chip.classList.add("active");
-
-        // Automatically scroll clicked chip into view
-        chip.scrollIntoView({
-            behavior: "smooth",
-            inline: "center",
-            block: "nearest"
-        });
-    });
+    }
 });
 
 
@@ -53,3 +72,25 @@ sliders.forEach(slider => {
         slider.scrollLeft = scrollLeft - walk;
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const leftBtn = document.getElementById("courseSlideLeft");
+    const rightBtn = document.getElementById("courseSlideRight");
+
+    const courseContainer = document.querySelector(".courses-section .job-cards-container");
+
+    if (leftBtn && rightBtn && courseContainer) {
+
+        leftBtn.addEventListener("click", () => {
+            courseContainer.scrollBy({ left: -400, behavior: 'smooth' });
+        });
+
+
+        rightBtn.addEventListener("click", () => {
+            courseContainer.scrollBy({ left: 400, behavior: 'smooth' });
+        });
+    }
+});
+

@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job-Details</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&family=Poppins&family=Prata&family=Share+Tech&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/job-details.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="../assests/logo.svg" alt="Where Is My Job Logo" class="logo">
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../pages/home.html">HOME</a></li>
+      <li><a href="../pages/jobs.html">JOBS</a></li>
+      <li><a href="../pages/companies.html">COMPANIES</a></li>
+      <li><a href="../pages/courses.html">COURSES</a></li>
+      <li><a href="../pages/contact.html">CONTACT</a></li>
+    </ul>
+
+    <div class="nav-account">
+      <div class="nav-actions">
+        <i class="fa-regular fa-user"></i>
+      </div>
+      <div class="account">
+        <p>ACCOUNT</p>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">
+      <span class="menu-icon">☰</span>
+    </button>
+  </nav>
+  <!-- 
+  <div class="back-btn">
+    <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+  </div> -->
+
+  <section class="job-details-container">
+
+    <!--job-details-1-->
+
+    <div id="intel" class="giant-job-card" style="display: none;">
+      <div class="title-with-logo">
+        <img src="../assests/intel.svg" alt="Intel" class="company-logo">
+        <span class="hiring-tag">~ Actively hiring</span>
+      </div>
+
+      <h1 class="job-title-large">Embedded Systems & IoT Engineer</h1>
+      <h2 class="company-name">Intel</h2>
+      <div class="job-details">
+        <p class="detail-item">Bangalore</p>
+        <p class="detail-item">₹ 7,00,000L - 10,00,000L / year</p>
+      </div>
+
+      <div class="rich-content-area">
+        <div class="info-block">
+          <h3>About The Role</h3>
+          <p>Intel is seeking an innovative Embedded Systems & IoT Engineer to design and develop next-generation
+            connected devices. You will work closely with hardware teams to write efficient firmware and ensure
+            seamless
+            communication between IoT nodes and cloud infrastructure.</p>
+          <p>As a key member of our IoT Solutions Group, you will get hands-on experience optimizing code for
+            microcontrollers and implementing standard protocols like MQTT, SPI, and I2C. You will tackle real-world
+            challenges involving latency, power consumption, and data security, ensuring our hardware operates
+            flawlessly in edge computing environments.</p>
+          <p>We value engineers who are curious and driven to push the boundaries of what connected devices can do.
+            You
+            will be supported with state-of-the-art lab equipment, comprehensive mentorship, and the opportunity to
+            see
+            your firmware deployed in millions of smart devices worldwide.</p>
+        </div>
+        <div class="info-block">
+          <h3>Key Responsibilities</h3>
+          <ul class="card-bullet-list">
+            <li>Develop and optimize firmware for microcontrollers and IoT devices.</li>
+            <li>Implement communication protocols (MQTT, SPI, I2C, UART).</li>
+            <li>Perform system-level debugging using logic analyzers and oscilloscopes.</li>
+            <li>Collaborate with cloud engineers to ensure secure data transmission.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Required Skills</h3>
+          <div class="skills-tags">
+            <span>C / C++</span><span>Microcontrollers</span><span>RTOS</span><span>IoT Protocols</span><span>Hardware
+              Debugging</span>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Who Can Apply</h3>
+          <ul class="card-bullet-list">
+            <li>Professionals with 1 to 3 years of hands-on experience in embedded firmware development.</li>
+            <li>Graduates with a B.E/B.Tech or M.Tech in Electronics (ECE), Electrical (EEE), or Computer Science.
+            </li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Other Requirements</h3>
+          <ul class="card-bullet-list">
+            <li>Ability to read and understand complex hardware schematics and component datasheets.</li>
+            <li>Experience using hardware debugging tools like oscilloscopes, multimeters, and logic analyzers.</li>
+            <li>Willingness to work in a hybrid environment requiring in-lab hardware testing.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="card-footer-large">
+          <a href="apply.html" class="view-details apply-btn">APPLY NOW</a>
+        </div>
+
+        <div class="back-btn">
+          <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!--job-details-2-->
+
+    <div id="zoho" class="giant-job-card" style="display: none;">
+
+      <!-- Top Section: Logo and Hiring Tag (Exact match to home page) -->
+      <div class="title-with-logo">
+        <img src="../assests/zoho.svg" alt="Zoho" class="company-logo">
+        <span class="hiring-tag">~ Actively hiring</span>
+      </div>
+
+      <!-- Job Title & Basic Info -->
+      <h1 class="job-title-large">Backend Developer (Java/Python/C++)</h1>
+      <h2 class="company-name">Zoho</h2>
+      <div class="job-details">
+        <p class="detail-item">Chennai</p>
+        <p class="detail-item">₹ 6,00,000 - 9,00,000 / year</p>
+      </div>
+
+      <!-- Middle Section: The Big Content -->
+      <div class="rich-content-area">
+
+        <div class="info-block">
+          <h3>About The Role</h3>
+          <p>Intel is seeking an innovative Embedded Systems & IoT Engineer to design and develop next-generation
+            connected devices. You will work closely with hardware teams to write efficient firmware and ensure
+            seamless
+            communication between IoT nodes and cloud infrastructure.</p>
+
+          <p>As a key member of our IoT Solutions Group, you will get hands-on experience optimizing code for
+            microcontrollers and implementing standard protocols like MQTT, SPI, and I2C. You will tackle real-world
+            challenges involving latency, power consumption, and data security, ensuring our hardware operates
+            flawlessly in edge computing environments.</p>
+
+          <p>We value engineers who are curious and driven to push the boundaries of what connected devices can do.
+            You
+            will be supported with state-of-the-art lab equipment, comprehensive mentorship, and the opportunity to
+            see
+            your firmware deployed in millions of smart devices worldwide.</p>
+        </div>
+
+        <div class="info-block">
+          <h3>Key Responsibilities</h3>
+          <ul class="card-bullet-list">
+            <li>Design and develop high-performance RESTful APIs and microservices.</li>
+            <li>Optimize databases for maximum speed and scalability.</li>
+            <li>Write clean, testable, and efficient code in Java, Python, or C++.</li>
+            <li>Troubleshoot and debug production issues in real-time.</li>
+          </ul>
+        </div>
+
+        <div class="info-block">
+          <h3>Who Can Apply</h3>
+          <ul class="card-bullet-list">
+            <li>Recent graduates (2025/2026 batches) or professionals with 0-2 years of backend experience.</li>
+            <li>Candidates holding a degree in Computer Science, IT, or a related technical field.</li>
+            <li>Individuals who are ready to relocate to or currently reside in Chennai.</li>
+          </ul>
+        </div>
+
+        <div class="info-block">
+          <h3>Other Requirements</h3>
+          <ul class="card-bullet-list">
+            <li>Strong analytical and logical problem-solving mindset.</li>
+            <li>Excellent written and verbal communication skills for team collaboration.</li>
+            <li>Ability to adapt quickly to proprietary internal frameworks and tools.</li>
+          </ul>
+        </div>
+
+        <div class="info-block">
+          <h3>Required Skills</h3>
+          <div class="skills-tags">
+            <span>Java</span>
+            <span>Python</span>
+            <span>C++</span>
+            <span>MySQL</span>
+            <span>REST APIs</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="buttons">
+        <div class="card-footer-large">
+          <a href="apply.html" class="view-details apply-btn">APPLY NOW</a>
+        </div>
+
+        <div class="back-btn">
+          <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--job-details-3-->
+
+    <div id="google" class="giant-job-card" style="display: none;">
+      <div class="title-with-logo">
+        <img src="../assests/google.svg" alt="Google" class="company-logo">
+        <span class="hiring-tag">~ Actively hiring</span>
+      </div>
+
+      <h1 class="job-title-large">Software Engineer, Core Systems</h1>
+      <h2 class="company-name">Google</h2>
+      <div class="job-details">
+        <p class="detail-item">Bengaluru</p>
+        <p class="detail-item">₹ 25L - 35L / year</p>
+      </div>
+
+      <div class="rich-content-area">
+        <div class="info-block">
+          <h3>About The Role</h3>
+          <p>As a Software Engineer in Google's Core Systems team, you will tackle some of the most complex
+            infrastructure problems in the world. You will build and optimize the foundational distributed systems that
+            power Google Search, YouTube, and Google Cloud, serving billions of users globally with millisecond latency.
+          </p>
+          <p>Your day-to-day work will involve designing highly scalable architecture, writing robust code in C++, Go,
+            or Java, and identifying performance bottlenecks in massive codebases. You will collaborate with
+            cross-functional teams of industry-leading engineers to ensure our platforms remain reliable, secure, and
+            capable of handling exponential data growth.</p>
+          <p>At Google, we encourage a culture of innovation and engineering excellence. You will be given the time and
+            resources to propose new architectural patterns, contribute to open-source projects, and continuously grow
+            your technical skill set in an environment that values big ideas and bold execution.</p>
+        </div>
+        <div class="info-block">
+          <h3>Key Responsibilities</h3>
+          <ul class="card-bullet-list">
+            <li>Design, develop, and test large-scale distributed software applications.</li>
+            <li>Optimize application performance and reduce latency.</li>
+            <li>Write scalable, robust code in C++, Go, or Java.</li>
+            <li>Participate in code reviews and architecture discussions.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Required Skills</h3>
+          <div class="skills-tags">
+            <span>C++ / Go</span><span>Distributed Systems</span><span>Data
+              Structures</span><span>Algorithms</span><span>System Design</span>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Who Can Apply</h3>
+          <ul class="card-bullet-list">
+            <li>Engineers with 2 to 5 years of production-level experience in building scalable systems.</li>
+            <li>Candidates with a deep understanding of Data Structures and Algorithms (DSA).</li>
+            <li>Those who have previously worked on cloud-native or highly distributed microservices.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Other Requirements</h3>
+          <ul class="card-bullet-list">
+            <li>A rigorous approach to software testing and code quality.</li>
+            <li>Strong system design capabilities and an understanding of high-availability architectures.</li>
+            <li>Passion for continuous learning and mentoring junior engineers.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="card-footer-large">
+          <a href="apply.html" class="view-details apply-btn">APPLY NOW</a>
+        </div>
+
+        <div class="back-btn">
+          <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--job-details-4-->
+
+    <div id="lenskart" class="giant-job-card" style="display: none;">
+      <div class="title-with-logo">
+        <img src="../assests/lenskart.png" alt="Lenskart" class="company-logo">
+        <span class="hiring-tag">~ Actively hiring</span>
+      </div>
+
+      <h1 class="job-title-large">UI/UX Product Designer</h1>
+      <h2 class="company-name">Lenskart</h2>
+      <div class="job-details">
+        <p class="detail-item">Bangalore</p>
+        <p class="detail-item">₹ 6L - 9L / year</p>
+      </div>
+
+      <div class="rich-content-area">
+        <div class="info-block">
+          <h3>About The Role</h3>
+          <p>We are looking for a creative and empathetic UI/UX Product Designer to craft intuitive, visually stunning
+            shopping experiences for Lenskart's web and mobile platforms. You will bridge the gap between digital and
+            physical retail, ensuring our customers have a seamless journey from browsing frames online to utilizing our
+            3D try-on technology.</p>
+          <p>In this role, you will take ownership of the end-to-end design process. You will conduct user research to
+            understand pain points, create wireframes and interactive prototypes in Figma, and collaborate tightly with
+            our frontend engineering team to bring your designs to life. Maintaining and evolving our internal Design
+            System will also be a key part of your workflow.</p>
+          <p>We want a designer who obsesses over the micro-interactions as much as the big picture. If you are
+            passionate about accessible design, user psychology, and shaping the future of e-commerce fashion, you will
+            find a highly collaborative and creative home at Lenskart.</p>
+        </div>
+        <div class="info-block">
+          <h3>Key Responsibilities</h3>
+          <ul class="card-bullet-list">
+            <li>Create low and high-fidelity wireframes, prototypes, and user flows.</li>
+            <li>Conduct user testing sessions to gather actionable feedback.</li>
+            <li>Work alongside developers to ensure pixel-perfect implementation of designs.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Required Skills</h3>
+          <div class="skills-tags">
+            <span>Figma</span><span>Adobe XD</span><span>User Research</span><span>Prototyping</span><span>Design
+              Systems</span>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Who Can Apply</h3>
+          <ul class="card-bullet-list">
+            <li>Designers with 0 to 2 years of experience in digital product design (web and mobile).</li>
+            <li>Candidates who can provide a strong portfolio showcasing user-centric design case studies.</li>
+            <li>Individuals with formal education in Design, HCI, or equivalent practical experience.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Other Requirements</h3>
+          <ul class="card-bullet-list">
+            <li>Exceptional visual design skills and a keen eye for typography, color, and layout.</li>
+            <li>Ability to articulate and defend design decisions to product managers and engineers.</li>
+            <li>Familiarity with agile workflows and iterative design processes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="card-footer-large">
+          <a href="apply.html" class="view-details apply-btn">APPLY NOW</a>
+        </div>
+
+        <div class="back-btn">
+          <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--job-details-5-->
+
+    <div id="amazon" class="giant-job-card" style="display: none;">
+      <div class="title-with-logo">
+        <img src="../assests/amazon.png" alt="Amazon" class="company-logo">
+        <span class="hiring-tag">~ Actively hiring</span>
+      </div>
+
+      <h1 class="job-title-large">Machine Learning Engineer</h1>
+      <h2 class="company-name">Amazon</h2>
+      <div class="job-details">
+        <p class="detail-item">Chennai</p>
+        <p class="detail-item">₹ 12L - 18L / year</p>
+      </div>
+
+      <div class="rich-content-area">
+        <div class="info-block">
+          <h3>About The Role</h3>
+          <p>Join Amazon's AI division to build predictive models and recommendation engines that directly influence
+            millions of daily purchasing decisions. We are looking for a Machine Learning Engineer who can transform
+            massive, complex datasets into actionable, customer-centric AI features.</p>
+          <p>You will work across the entire machine learning lifecycle: data mining, model training, optimization, and
+            deploying models into production using AWS infrastructure like SageMaker. Whether you are improving natural
+            language processing for search algorithms or optimizing logistics predictions, your code will operate at an
+            unprecedented, global scale.</p>
+          <p>Amazon operates on a "builder" culture. We expect you to take ownership of your models, continuously A/B
+            test your algorithms, and push the boundaries of what is possible with deep learning and neural networks to
+            create a highly personalized experience for our users.</p>
+        </div>
+        <div class="info-block">
+          <h3>Key Responsibilities</h3>
+          <ul class="card-bullet-list">
+            <li>Design, build, and deploy scalable machine learning models.</li>
+            <li>Perform exploratory data analysis on petabytes of structured and unstructured data.</li>
+            <li>Collaborate with data scientists and backend engineers to integrate AI APIs.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Required Skills</h3>
+          <div class="skills-tags">
+            <span>Python</span><span>TensorFlow / PyTorch</span><span>AWS SageMaker</span><span>NLP</span><span>Data
+              Mining</span>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Who Can Apply</h3>
+          <ul class="card-bullet-list">
+            <li>Engineers with 2+ years of dedicated experience in Machine Learning or Artificial Intelligence.</li>
+            <li>Candidates with a Master's degree or PhD in Computer Science, Statistics, Mathematics, or a related
+              quantitative field.</li>
+            <li>Professionals who have successfully deployed ML models into live production environments.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Other Requirements</h3>
+          <ul class="card-bullet-list">
+            <li>Deep mathematical understanding of machine learning algorithms under the hood.</li>
+            <li>Experience with AWS cloud services (SageMaker, EC2, S3) is highly preferred.</li>
+            <li>Strong business acumen to align AI initiatives with core customer needs.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="card-footer-large">
+          <a href="apply.html" class="view-details apply-btn">APPLY NOW</a>
+        </div>
+
+        <div class="back-btn">
+          <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--job-details-6-->
+
+    <div id="cognizant" class="giant-job-card" style="display: none;">
+      <div class="title-with-logo">
+        <img src="../assests/cognizants.svg" alt="Cognizant" class="company-logo">
+        <span class="hiring-tag">~ Actively hiring</span>
+      </div>
+
+      <h1 class="job-title-large">AI Solutions Developer</h1>
+      <h2 class="company-name">Cognizant</h2>
+      <div class="job-details">
+        <p class="detail-item">Bangalore</p>
+        <p class="detail-item">₹ 8L - 12L / year</p>
+      </div>
+
+      <div class="rich-content-area">
+        <div class="info-block">
+          <h3>About The Role</h3>
+          <p>Cognizant is hiring a forward-thinking AI Solutions Developer to integrate Large Language Models (LLMs) and
+            Generative AI into enterprise workflows. You will be at the forefront of digital transformation, helping
+            global Fortune 500 clients automate complex business processes and unlock new efficiencies.</p>
+          <p>You will leverage tools like LangChain, the OpenAI API, and vector databases to design smart agents and
+            custom AI copilots. Your responsibilities will include prompt engineering, fine-tuning models for specific
+            industry use cases, and ensuring that AI outputs are secure, accurate, and compliant with enterprise data
+            standards.</p>
+          <p>This role requires a unique blend of technical expertise and business acumen. You will work closely with
+            client stakeholders to understand their operational bottlenecks and architect tailor-made AI solutions that
+            drive real-world ROI and modernize their tech stacks.</p>
+        </div>
+        <div class="info-block">
+          <h3>Key Responsibilities</h3>
+          <ul class="card-bullet-list">
+            <li>Develop AI wrappers and chatbots tailored to enterprise client needs.</li>
+            <li>Optimize prompts and retrieval-augmented generation (RAG) workflows.</li>
+            <li>Integrate AI features seamlessly with existing traditional software architectures.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Required Skills</h3>
+          <div class="skills-tags">
+            <span>Python</span><span>LangChain</span><span>OpenAI API</span><span>Prompt Engineering</span>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Who Can Apply</h3>
+          <ul class="card-bullet-list">
+            <li>Developers with 1 to 4 years of software engineering experience, particularly in Python.</li>
+            <li>Candidates who have actively experimented with or implemented LLMs (OpenAI, Claude, Llama).</li>
+            <li>Tech enthusiasts looking to pivot fully into the Generative AI and automation space.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Other Requirements</h3>
+          <ul class="card-bullet-list">
+            <li>Excellent client-facing communication skills for requirement gathering and demos.</li>
+            <li>Familiarity with data privacy and security standards in AI implementations.</li>
+            <li>A proactive mindset to keep up with the rapidly evolving AI landscape.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="card-footer-large">
+          <a href="apply.html" class="view-details apply-btn">APPLY NOW</a>
+        </div>
+
+        <div class="back-btn">
+          <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--job-details-7-->
+
+    <div id="globalnet" class="giant-job-card" style="display: none;">
+      <div class="title-with-logo">
+        <img src="../assests/globalnet.png" alt="GlobalNet Systems" class="company-logo">
+        <span class="hiring-tag">~ Actively hiring</span>
+      </div>
+
+      <h1 class="job-title-large">Cloud Infrastructure Engineer</h1>
+      <h2 class="company-name">GlobalNet Systems</h2>
+      <div class="job-details">
+        <p class="detail-item">Anywhere in India</p>
+        <p class="detail-item">₹ 10L - 15L / year</p>
+      </div>
+
+      <div class="rich-content-area">
+        <div class="info-block">
+          <h3>About The Role</h3>
+          <p>As a Cloud Infrastructure Engineer at GlobalNet Systems, you will maintain and scale 100% remote cloud
+            environments for our enterprise clients. Your primary mission is to implement robust Infrastructure as Code
+            (IaC) and ensure 99.99% uptime for mission-critical applications.</p>
+          <p>Your day will revolve around provisioning resources on AWS or Azure using Terraform, orchestrating
+            containerized applications with Kubernetes, and streamlining CI/CD pipelines. You will also proactively
+            monitor system health, automate repetitive administrative tasks, and respond to high-level security
+            incidents to keep our cloud environments fortified.</p>
+          <p>Because we are a remote-first company, we rely on strong documentation and asynchronous communication. You
+            will enjoy the ultimate flexibility of working from anywhere in India, backed by a supportive, highly
+            technical team that values deep work and automation over unnecessary meetings.</p>
+        </div>
+        <div class="info-block">
+          <h3>Key Responsibilities</h3>
+          <ul class="card-bullet-list">
+            <li>Provision, configure, and maintain cloud computing environments.</li>
+            <li>Manage Docker and Kubernetes clusters for containerized deployments.</li>
+            <li>Create and maintain robust CI/CD pipelines utilizing GitHub Actions or Jenkins.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Required Skills</h3>
+          <div class="skills-tags">
+            <span>AWS / Azure</span><span>Terraform</span><span>Kubernetes</span><span>Linux
+              Administration</span><span>CI/CD Pipelines</span>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Who Can Apply</h3>
+          <ul class="card-bullet-list">
+            <li>Cloud practitioners with 3+ years of experience managing AWS, Azure, or GCP environments.</li>
+            <li>Self-motivated individuals who thrive in a 100% remote, asynchronous work culture.</li>
+            <li>Candidates holding active, relevant certifications (e.g., AWS Certified Solutions Architect).</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Other Requirements</h3>
+          <ul class="card-bullet-list">
+            <li>Strict adherence to security best practices and compliance standards.</li>
+            <li>Exceptional written communication skills for creating technical documentation and runbooks.</li>
+            <li>Ability to participate in on-call rotations to ensure 99.99% system uptime.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="card-footer-large">
+          <a href="apply.html" class="view-details apply-btn">APPLY NOW</a>
+        </div>
+
+        <div class="back-btn">
+          <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--job-details-8-->
+
+    <div id="studiov" class="giant-job-card" style="display: none;">
+      <div class="title-with-logo">
+        <img src="../assests/studioV.png" alt="Studio V" class="company-logo">
+        <span class="hiring-tag">~ Actively hiring</span>
+      </div>
+
+      <h1 class="job-title-large">Graphic & Brand Designer</h1>
+      <h2 class="company-name">Studio V</h2>
+      <div class="job-details">
+        <p class="detail-item">Bangalore</p>
+        <p class="detail-item">₹ 3L - 5L / year</p>
+      </div>
+
+      <div class="rich-content-area">
+        <div class="info-block">
+          <h3>About The Role</h3>
+          <p>Studio V is searching for a passionate Graphic & Brand Designer to build compelling visual identities for
+            top-tier clients. We are a fast-paced creative agency, and we need someone who can translate a brand's core
+            values into striking, memorable visual narratives.</p>
+          <p>You will be hands-on with a wide variety of deliverables. One week you might be conceptualizing a logo and
+            typography system for a tech startup, and the next you might be designing marketing collateral and social
+            media campaigns for a lifestyle brand. Mastery of Adobe Illustrator, Photoshop, and a keen eye for modern
+            design trends are essential.</p>
+          <p>We believe the best design comes from collaboration. You will participate in creative brainstorming
+            sessions, present your concepts directly to clients, and work alongside copywriters and art directors in a
+            vibrant, ego-free studio environment that champions creative freedom.</p>
+        </div>
+        <div class="info-block">
+          <h3>Key Responsibilities</h3>
+          <ul class="card-bullet-list">
+            <li>Design scalable logos, visual identities, and comprehensive brand guidelines.</li>
+            <li>Create engaging social media graphics, print materials, and digital ad banners.</li>
+            <li>Pitch design concepts clearly and effectively to both internal teams and clients.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Required Skills</h3>
+          <div class="skills-tags">
+            <span>Adobe Illustrator</span><span>Photoshop</span><span>Brand Identity</span><span>Typography</span>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Who Can Apply</h3>
+          <ul class="card-bullet-list">
+            <li>Creative professionals (freshers or up to 2 years experience) looking for an agency environment.</li>
+            <li>Candidates with a compelling portfolio demonstrating brand identity creation and marketing collateral.
+            </li>
+            <li>Self-taught designers or graduates from applied arts and design programs.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Other Requirements</h3>
+          <ul class="card-bullet-list">
+            <li>Ability to handle multiple design briefs simultaneously under tight deadlines.</li>
+            <li>A highly collaborative mindset with zero ego when receiving creative feedback.</li>
+            <li>Basic knowledge of motion graphics or video editing (After Effects/Premiere Pro) is a major plus.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="card-footer-large">
+          <a href="apply.html" class="view-details apply-btn">APPLY NOW</a>
+        </div>
+
+        <div class="back-btn">
+          <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--job-details-9-->
+
+    <div id="infosys" class="giant-job-card" style="display: none;">
+
+      <div class="title-with-logo">
+        <img src="../assests/infosys.svg" alt="Infosys" class="company-logo">
+        <span class="hiring-tag">~ Actively hiring</span>
+      </div>
+
+      <h1 class="job-title-large">Software Engineer (Java / Python)</h1>
+      <h2 class="company-name">Infosys</h2>
+      <div class="job-details">
+        <p class="detail-item">Mysore / Chennai</p>
+        <p class="detail-item">₹ 3.6L - 5L / year</p>
+      </div>
+
+      <div class="rich-content-area">
+        <div class="info-block">
+          <h3>About The Role</h3>
+          <p>Infosys is seeking dynamic Software Engineers to join our global development centers. You will be part of
+            an agile team responsible for building high-performance enterprise applications. Your work will involve
+            writing clean, scalable code using foundational technologies like Java, Python, and C++ to solve complex
+            business challenges.</p>
+          <p>In this role, you will participate in the entire software development lifecycle, from requirement analysis
+            to deployment and maintenance. You will utilize version control systems like Git and collaborate across
+            functional teams to ensure seamless integration of backend logics with modern database management systems.
+          </p>
+          <p>We provide a world-class training program at our global training center to bridge the gap between academic
+            learning and industry standards. You will have continuous opportunities to upskill, work on diverse client
+            portfolios, and shape a long-term technical career in a highly supportive environment.</p>
+        </div>
+        <div class="info-block">
+          <h3>Key Responsibilities</h3>
+          <ul class="card-bullet-list">
+            <li>Write, test, and debug highly efficient code in Java, Python, or C++.</li>
+            <li>Manage database queries and optimize data retrieval processes.</li>
+            <li>Maintain code repositories and manage version control using Git and GitHub.</li>
+            <li>Participate in agile sprint meetings and deliver scalable software solutions.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Required Skills</h3>
+          <div class="skills-tags">
+            <span>Java</span><span>Python</span><span>C++</span><span>DBMS</span><span>Git / GitHub</span>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Who Can Apply</h3>
+          <ul class="card-bullet-list">
+            <li>Recent engineering graduates (B.E/B.Tech) from the 2025/2026 batches.</li>
+            <li>Candidates with a strong foundation in object-oriented programming concepts.</li>
+            <li>Individuals willing to undergo training and relocate to major tech hubs.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Other Requirements</h3>
+          <ul class="card-bullet-list">
+            <li>Strong aptitude and logical reasoning skills.</li>
+            <li>Excellent verbal and written communication abilities.</li>
+            <li>Proactive learning mindset to quickly adapt to new project requirements.</li>
+          </ul>
+        </div>
+      </div>
+
+       <div class="buttons">
+        <div class="card-footer-large">
+          <a href="apply.html" class="view-details apply-btn">APPLY NOW</a>
+        </div>
+
+        <div class="back-btn">
+          <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!--job-details-10-->
+
+    <div id="accenture" class="giant-job-card" style="display: none;">
+
+      <div class="title-with-logo">
+        <img src="../assests/accenture.svg" alt="Accenture" class="company-logo">
+        <span class="hiring-tag">~ Actively hiring</span>
+      </div>
+
+      <h1 class="job-title-large">Frontend & Systems Developer</h1>
+      <h2 class="company-name">Accenture</h2>
+      <div class="job-details">
+        <p class="detail-item">Hyderabad / Bengaluru</p>
+        <p class="detail-item">₹ 4.5L - 6.5L / year</p>
+      </div>
+
+      <div class="rich-content-area">
+        <div class="info-block">
+          <h3>About The Role</h3>
+          <p>Accenture is looking for a versatile Frontend & Systems Developer to deliver exceptional digital
+            experiences for our Fortune 500 clients. You will build highly responsive user interfaces using modern web
+            technologies like HTML, CSS, JavaScript, and utility-first frameworks like Tailwind CSS, ensuring
+            pixel-perfect designs across all devices.</p>
+          <p>Beyond frontend development, this role offers the unique opportunity to work with enterprise service
+            management platforms. You will assist in configuring workflows, building custom applications, and
+            maintaining system health on cloud platforms, making you a highly well-rounded developer bridging UI/UX and
+            enterprise architecture.</p>
+          <p>At Accenture, you will join a diverse, global network of technology innovators. We value continuous
+            certification and encourage our engineers to host live sites, manage seamless deployments via platforms like
+            Netlify, and constantly explore new paradigms in software engineering.</p>
+        </div>
+        <div class="info-block">
+          <h3>Key Responsibilities</h3>
+          <ul class="card-bullet-list">
+            <li>Develop scalable, interactive web layouts using HTML, CSS, JavaScript, and Tailwind CSS.</li>
+            <li>Configure and maintain enterprise cloud applications and system administration workflows.</li>
+            <li>Deploy live projects and manage continuous integration pipelines.</li>
+            <li>Ensure cross-browser compatibility and optimize applications for maximum speed.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Required Skills</h3>
+          <div class="skills-tags">
+            <span>HTML / CSS</span><span>JavaScript</span><span>Tailwind CSS</span><span>ServiceNow
+              admin</span><span>Netlify</span>
+          </div>
+        </div>
+        <div class="info-block">
+          <h3>Who Can Apply</h3>
+          <ul class="card-bullet-list">
+            <li>Engineering or IT graduates with 0-2 years of experience in web development.</li>
+            <li>Candidates actively pursuing or holding certifications in enterprise systems (e.g., System
+              Administrator).</li>
+            <li>Developers with a strong portfolio of live, deployed frontend projects.</li>
+          </ul>
+        </div>
+        <div class="info-block">
+          <h3>Other Requirements</h3>
+          <ul class="card-bullet-list">
+            <li>Solid understanding of modern CSS layout techniques like Flexbox and Grid.</li>
+            <li>Familiarity with debugging tools and browser developer consoles.</li>
+            <li>Strong collaborative skills to work alongside UI/UX designers and backend engineers.</li>
+          </ul>
+        </div>
+      </div>
+
+       <div class="buttons">
+        <div class="card-footer-large">
+          <a href="apply.html" class="view-details apply-btn">APPLY NOW</a>
+        </div>
+
+        <div class="back-btn">
+          <a href="../pages/home.html#job-cards">BACK TO JOBS</a>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="floating-footer">
+    <div class="footer-container">
+
+      <div class="footer-content">
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <!-- Image is now cleanly sized without absolute positioning -->
+          <img src="..//assests/logo.svg" alt="Where Is My Job" class="footer-img">
+          <p class="footer-tagline">Your ultimate platform to find top tech roles, internships, and buildathons.</p>
+
+          <div class="footer-socials">
+            <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-linkedin-in" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-x-twitter" style="color: rgb(255, 255, 255);"></i>
+          </div>
+        </div>
+
+        <!-- Column 2: Job Seekers -->
+        <div class="footer-col">
+          <h4>Job Seekers</h4>
+          <a href="#">Search Jobs</a>
+          <a href="#">Internships</a>
+          <a href="#">Online Courses</a>
+          <a href="#">Hackathons</a>
+        </div>
+
+        <!-- Column 3: Employers -->
+        <div class="footer-col">
+          <h4>Employers</h4>
+          <a href="#">Post a Job</a>
+          <a href="#">Search Resumes</a>
+          <a href="#">Request Demo</a>
+          <a href="#">Pricing</a>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Where Is My Job. All rights reserved.</p>
+      </div>
+
+      <a href="#" class="scroll-top-btn" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/job-details.js"></script>
+</body>
+
+</html>
