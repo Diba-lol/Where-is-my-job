@@ -34,3 +34,21 @@
         });
     });
 
+document.addEventListener("DOMContentLoaded", () => {
+
+    let currentPage = window.location.pathname.split("/").pop() || "home.html"; 
+
+    const navLinks = document.querySelectorAll(".nav-links a");
+
+    navLinks.forEach(link => {
+        const hrefValue = link.getAttribute("href");
+        
+        if (hrefValue) {
+   
+            const linkPage = hrefValue.split("/").pop();
+            if (linkPage === currentPage || (hrefValue === "#" && currentPage === "home.html")) {
+                link.classList.add("active-nav"); 
+            }
+        }
+    });
+});
