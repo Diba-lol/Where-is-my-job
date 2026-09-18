@@ -393,6 +393,7 @@ select {
 
 @media (max-width: 860px) {
    
+
     .btn-outline {
         padding: 8px 12px;
     }
@@ -416,7 +417,7 @@ select {
 }
 
 @media (max-width: 600px) {
-   
+    
     .intro {
         padding: 40px 20px;
     }

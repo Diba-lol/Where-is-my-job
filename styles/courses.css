@@ -259,8 +259,12 @@
 }
 
 .course-card .view-details {
+    font-family: 'Anton', sans-serif;
     font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
     padding: 11px 18px;
+    text-transform: uppercase;
     width: 100%;
 }
 
