@@ -183,6 +183,7 @@
 }
 
 /* Mobile Responsive Adjustments */
+
 @media (max-width: 768px) {
   .giant-job-card {
     padding: 30px 20px;

@@ -282,11 +282,6 @@
   transform: scale(1.03);
 }
 
-/* =========================================
-   RESPONSIVE DESIGN (MOBILE & TABLET VIEWS)
-   ========================================= */
-
-/* 1. Tablets & Small Laptops (Width 1024px அல்லது அதற்குக் கீழே) */
 @media screen and (max-width: 1024px) {
     .jobs-page-wrapper {
         padding: 20px 3%;
@@ -294,7 +289,7 @@
     }
 
     .jobs-sidebar {
-        width: 240px; /* சைடுபாரின் அகலத்தை லேசாகக் குறைக்கிறோம் */
+        width: 240px; 
     }
 
     .job-card-exact-dark {
@@ -302,15 +297,13 @@
     }
 }
 
-/* 2. Mobile & Small Tablets (Width 768px அல்லது அதற்குக் கீழே) */
 @media screen and (max-width: 768px) {
-    /* லேஅவுட்டை Column-ஆக மாற்றுதல் (சைடுபார் மேலே, கார்டுகள் கீழே வரும்) */
+
     .jobs-page-wrapper {
         flex-direction: column;
         padding: 15px;
     }
 
-    /* மொபைலில் சைடுபார் ஸ்டிக்கியாக இருக்கத் தேவையில்லை */
     .jobs-sidebar {
         width: 100%;
         position: static;
@@ -319,19 +312,17 @@
         box-sizing: border-box;
     }
 
-    /* ஜாப் கார்டுகள் மொபைலுக்கு ஏற்ப சுருங்கி விரிய */
     .jobs-list-container {
         width: 100%;
     }
 
     .job-card-exact-dark {
-        flex-direction: column; /* கார்டில் உள்ள இடது மற்றும் வலது பகுதிகள் ஒன்றன்கீழ் ஒன்றாக வரும் */
+        flex-direction: column;
         align-items: flex-start;
         padding: 20px;
         gap: 16px;
     }
 
-    /* மொபைலில் கம்பெனி லோகோ மற்றும் வியூ பட்டனை சரி செய்ய */
     .card-right-section {
         width: 100%;
         flex-direction: row;
@@ -352,8 +343,8 @@
     }
 
     .job-desc-snippet p {
-        max-width: 100%; /* மொபைல் ஸ்கிரீனுக்கு ஏற்ப டெக்ஸ்ட் அடங்கும் */
-        white-space: normal; /* தேவைப்பட்டால் அடுத்த வரிக்கு வர அனுமதிக்கலாம் */
+        max-width: 100%;
+        white-space: normal; 
     }
 
     .job-meta-info {
