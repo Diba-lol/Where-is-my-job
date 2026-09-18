@@ -10,8 +10,15 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&family=Poppins&family=Prata&family=Share+Tech&display=swap"
     rel="stylesheet">
-<link rel="stylesheet" href="../styles/common.css">
-<link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/job-details.css">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/job-details.css">
+  <link rel="stylesheet" href="../styles/common.css">
+  <link rel="stylesheet" href="../styles/home.css">
 </head>
 
 <body>
@@ -28,12 +35,12 @@
       <li><a href="../pages/contact.html">CONTACT</a></li>
     </ul>
 
-    <div class="nav-actions">
-      <div class="nav-lang">
-        <span>EN</span>
-        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1 1L5 5L9 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
+    <div class="nav-account">
+      <div class="nav-actions">
+        <i class="fa-regular fa-user"></i>
+      </div>
+      <div class="account">
+        <p>ACCOUNT</p>
       </div>
     </div>
     <button class="menu-toggle" id="menuToggle">
@@ -95,21 +102,22 @@
 
   <section class="fresher-jobs-section">
     <h2 class="section-title">DISCOVER YOUR DREAM JOB</h2>
-    <h2 class="section-title">FIND CARRER</h2>
-    <div class="filter-container">
-      <button class="filter-chip active">All Jobs</button>
-      <button class="filter-chip">Work from home</button>
-      <button class="filter-chip">Engineering</button>
-      <button class="filter-chip">Media</button>
-      <button class="filter-chip">Design</button>
-      <button class="filter-chip">Data Science</button>
+    <h2 class="section-title" id="job-cards">FIND CARRER</h2>
+
+    <div class="filter-container" id="job-cards">
+      <button class="filter-chip active" data-filter="all">All Jobs</button>
+      <button class="filter-chip" data-filter="wfh">Work from home</button>
+      <button class="filter-chip" data-filter="engineering">Engineering</button>
+      <button class="filter-chip" data-filter="media">Media</button>
+      <button class="filter-chip" data-filter="design">Design</button>
+      <button class="filter-chip" data-filter="data-science">Data Science</button>
     </div>
 
     <div class="job-cards-container">
 
       <!--job-card-1-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="engineering">
         <div class="hiring-tag-logo">
 
           <img src="../assests/intel.svg" alt="intel" class="company-logo">
@@ -137,13 +145,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=intel" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--job-card-2-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="engineering">
         <div class="hiring-tag-logo">
 
           <img src="../assests/zoho.svg" alt="zoho" class="company-logo">
@@ -171,13 +179,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=zoho" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--job-card-3-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="engineering">
         <div class="hiring-tag-logo">
 
           <img src="../assests/google.svg" alt="pixelcraft" class="company-logo">
@@ -205,13 +213,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=google" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--job-card-4-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="design">
         <div class="hiring-tag-logo">
 
           <img src="../assests/lenskart.png" alt="lenskart" class="company-logo">
@@ -239,13 +247,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=lenskart" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--job-card-5-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="media">
         <div class="hiring-tag-logo">
 
           <img src="../assests/studioV.png" alt="studioV" class="company-logo">
@@ -273,13 +281,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=studiov" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--job-card-6-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="data-science">
         <div class="hiring-tag-logo">
 
           <img src="../assests/amazon.png" alt="amazon" class="company-logo">
@@ -307,13 +315,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=amazon" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--job-card-7-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="data-science">
         <div class="hiring-tag-logo">
 
           <img src="../assests/cognizants.svg" alt="cognizant" class="company-logo">
@@ -341,13 +349,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=cognizant" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--job-card-8-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="wfh">
         <div class="hiring-tag-logo">
 
           <img src="../assests/globalnet.png" alt="zoho" class="company-logo">
@@ -375,29 +383,30 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=globalnet" class="view-details">View details &gt;</a>
         </div>
       </div>
 
     </div>
+
   </section>
 
   <section class="fresher-jobs-section">
     <h2 class="section-title">INTERNSHIP</h2>
-    <div class="filter-container">
-      <button class="filter-chip active">All Jobs</button>
-      <button class="filter-chip">Work from home</button>
-      <button class="filter-chip">Engineering</button>
-      <button class="filter-chip">Media</button>
-      <button class="filter-chip">Design</button>
-      <button class="filter-chip">Data Science</button>
+    <div class="filter-container" id="job-cards">
+      <button class="filter-chip active" data-filter="all">All Jobs</button>
+      <button class="filter-chip" data-filter="wfh">Work from home</button>
+      <button class="filter-chip" data-filter="engineering">Engineering</button>
+      <button class="filter-chip" data-filter="media">Media</button>
+      <button class="filter-chip" data-filter="design">Design</button>
+      <button class="filter-chip" data-filter="data-science">Data Science</button>
     </div>
 
     <div class="job-cards-container">
 
       <!--internship-1-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="engineering">
         <div class="hiring-tag-logo">
 
           <img src="../assests/google.svg" alt="google" class="company-logo">
@@ -425,13 +434,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=google" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--internship-2-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="engineering">
         <div class="hiring-tag-logo">
 
           <img src="../assests/infosys.svg" alt="infosys" class="company-logo">
@@ -459,13 +468,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=infosys" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--internship-3-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="engineering">
         <div class="hiring-tag-logo">
 
           <img src="../assests/zoho.svg" alt="zoho" class="company-logo">
@@ -493,13 +502,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=zoho" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--internship-4-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="engineering">
         <div class="hiring-tag-logo">
 
           <img src="../assests/intel.svg" alt="intel" class="company-logo">
@@ -515,7 +524,7 @@
 
         </div>
 
-        <h3 class="job-title">Embedded Systems & IoT Engineer</h3>
+        <h3 class="job-title" data-category="engineering">Embedded Systems & IoT Engineer</h3>
         <p class="company-name">Intel</p>
 
         <div class="job-details">
@@ -527,13 +536,13 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=intel" class="view-details">View details &gt;</a>
         </div>
       </div>
 
       <!--internship-5-->
 
-      <div class="job-card">
+      <div class="job-card" data-category="engineering">
         <div class="hiring-tag-logo">
 
           <img src="../assests/accenture.svg" alt="accenture" class="company-logo">
@@ -561,7 +570,177 @@
 
         <div class="card-footer">
           <span class="job-type-tag">Job</span>
-          <a href="#" class="view-details">View details &gt;</a>
+          <a href="../pages/job-details.html?job=accenture" class="view-details">View details &gt;</a>
+        </div>
+      </div>
+
+            <!--internship-5-->
+
+      <div class="job-card" data-category="design">
+        <div class="hiring-tag-logo">
+
+          <img src="../assests/lenskart.png" alt="lenskart" class="company-logo">
+
+          <div class="hiring-tag">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+            Actively hiring
+          </div>
+
+        </div>
+
+        <h3 class="job-title">UI/UX Product Designer</h3>
+        <p class="company-name">Lenskart</p>
+
+        <div class="job-details">
+          <div class="detail-item">
+            <p>Bangalore</p>
+            <p>₹ 6,00,000L - 9,00,000L / year</p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span class="job-type-tag">Job</span>
+          <a href="../pages/job-details.html?job=lenskart" class="view-details">View details &gt;</a>
+        </div>
+      </div>
+
+      <!--internship-6-->
+
+      <div class="job-card" data-category="media">
+        <div class="hiring-tag-logo">
+
+          <img src="../assests/studioV.png" alt="studioV" class="company-logo">
+
+          <div class="hiring-tag">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+            Actively hiring
+          </div>
+
+        </div>
+
+        <h3 class="job-title">Graphic & Brand Designer</h3>
+        <p class="company-name">Studio V</p>
+
+        <div class="job-details">
+          <div class="detail-item">
+            <p>Bangalore, Karnataka</p>
+            <p>₹ 3,00,000L - 5,00,000L / year</p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span class="job-type-tag">Job</span>
+          <a href="../pages/job-details.html?job=studiov" class="view-details">View details &gt;</a>
+        </div>
+      </div>
+
+      <!--internship-7-->
+
+      <div class="job-card" data-category="data-science">
+        <div class="hiring-tag-logo">
+
+          <img src="../assests/amazon.png" alt="amazon" class="company-logo">
+
+          <div class="hiring-tag">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+            Actively hiring
+          </div>
+
+        </div>
+
+        <h3 class="job-title">Machine Learning Engineer</h3>
+        <p class="company-name">Amazon</p>
+
+        <div class="job-details">
+          <div class="detail-item">
+            <p>Chennai</p>
+            <p>₹ 12,00,000L - 18,00,000L / year</p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span class="job-type-tag">Job</span>
+          <a href="../pages/job-details.html?job=amazon" class="view-details">View details &gt;</a>
+        </div>
+      </div>
+
+      <!--internship-8-->
+
+      <div class="job-card" data-category="data-science">
+        <div class="hiring-tag-logo">
+
+          <img src="../assests/cognizants.svg" alt="cognizant" class="company-logo">
+
+          <div class="hiring-tag">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+            Actively hiring
+          </div>
+
+        </div>
+
+        <h3 class="job-title">AI Solutions Developer</h3>
+        <p class="company-name">Cognizant</p>
+
+        <div class="job-details">
+          <div class="detail-item">
+            <p>Bangalore</p>
+            <p>₹ 8,00,000L - 12,00,000L / year</p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span class="job-type-tag">Job</span>
+          <a href="../pages/job-details.html?job=cognizant" class="view-details">View details &gt;</a>
+        </div>
+      </div>
+
+      <!--internship-9-->
+
+      <div class="job-card" data-category="wfh">
+        <div class="hiring-tag-logo">
+
+          <img src="../assests/globalnet.png" alt="zoho" class="company-logo">
+
+          <div class="hiring-tag">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+            Actively hiring
+          </div>
+
+        </div>
+
+        <h3 class="job-title">Cloud Infrastructure Engineer</h3>
+        <p class="company-name">GlobalNet Systems</p>
+
+        <div class="job-details">
+          <div class="detail-item">
+            <p>Anywhere in India</p>
+            <p>₹ 10,00,000L - 15,00,000L / year</p>
+          </div>
+        </div>
+
+        <div class="card-footer">
+          <span class="job-type-tag">Job</span>
+          <a href="../pages/job-details.html?job=globalnet" class="view-details">View details &gt;</a>
         </div>
       </div>
 
@@ -578,7 +757,7 @@
 
     <div class="hiring-content">
       <h2 class="hiring-title">LOOKING TO<br>HIRE?</h2>
-      <a href="#" class="demo-button">REQUEST DEMO</a>
+      <a href="../pages/contact.html" class="demo-button">REQUEST DEMO</a>
     </div>
 
   </div>
@@ -589,6 +768,7 @@
   <section class="courses-section">
 
     <h2 class="section-title">ONLINE COURSES</h2>
+
     <div class="course-features-row">
       <span class="feature-pill">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#a855f7" stroke-width="3"
@@ -611,13 +791,19 @@
         </svg>
         Priority Access to top opportunities
       </span>
+
+      <div class="course-slider-controls">
+        <button id="courseSlideLeft" class="slider-arrow">&#10094;</button>
+        <button id="courseSlideRight" class="slider-arrow">&#10095;</button>
+      </div>
+
     </div>
 
     <!-- Course Cards Container (Reuses horizontal scroll) -->
     <div class="job-cards-container">
 
       <!--course-card-1-->
-      <div class="job-card course-card neon-green">
+      <div class="job-card course-card">
         <div class="course-banner green-banner">
           <!-- Atom SVG Icon -->
           <img src="../assests/data-science.png">
@@ -639,7 +825,7 @@
       </div>
 
       <!--course-card-2-->
-      <div class="job-card course-card neon-pink">
+      <div class="job-card course-card">
         <div class="course-banner pink-banner">
           <img src="../assests/AI.png">
         </div>
@@ -660,7 +846,7 @@
       </div>
 
       <!--course-card-3-->
-      <div class="job-card course-card neon-blue">
+      <div class="job-card course-card">
         <div class="course-banner blue-banner">
           <img src="../assests/full-stack.png">
         </div>
@@ -951,72 +1137,65 @@
 
   <footer class="floating-footer">
     <div class="footer-container">
-        
-        <div class="footer-content">
-            <!-- Column 1: Brand -->
-            <div class="footer-col brand-col">
-                <!-- Image is now cleanly sized without absolute positioning -->
-                <img src="../assests/footer-logo.svg" alt="Where Is My Job" class="footer-img">
-                <p class="footer-tagline">Your ultimate platform to find top tech roles, internships, and buildathons.</p>
-                
-                <!-- Replaced broken FontAwesome with fail-proof SVGs -->
-                <div class="footer-socials">
-                    <a href="#" aria-label="Instagram">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                    </a>
-                    <a href="#" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    </a>
-                    <a href="#" aria-label="Twitter / X">
-                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.73 16h5L9 4z"></path><path d="M4 20l6.76-6.76"></path><path d="M20 4l-5.73 5.73"></path></svg>
-                    </a>
-                </div>
-            </div>
 
-            <!-- Column 2: Job Seekers -->
-            <div class="footer-col">
-                <h4>Job Seekers</h4>
-                <a href="#">Search Jobs</a>
-                <a href="#">Internships</a>
-                <a href="../pages/courses.html">Online Courses</a>
-                <a href="#">Hackathons</a>
-            </div>
+      <div class="footer-content">
+        <!-- Column 1: Brand -->
+        <div class="footer-col brand-col">
+          <!-- Image is now cleanly sized without absolute positioning -->
+          <img src="..//assests/logo.svg" alt="Where Is My Job" class="footer-img">
+          <p class="footer-tagline">Your ultimate platform to find top tech roles, internships, and buildathons.</p>
 
-            <!-- Column 3: Employers -->
-            <div class="footer-col">
-                <h4>Employers</h4>
-                <a href="#">Post a Job</a>
-                <a href="#">Search Resumes</a>
-                <a href="#">Request Demo</a>
-                <a href="#">Pricing</a>
-            </div>
-
-            <!-- Column 4: Company -->
-            <div class="footer-col">
-                <h4>Company</h4>
-                <a href="#">About Us</a>
-                <a href="contact.html">Contact Us</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-            </div>
+          <div class="footer-socials">
+            <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-linkedin-in" style="color: rgb(255, 255, 255);"></i>
+            <i class="fa-brands fa-x-twitter" style="color: rgb(255, 255, 255);"></i>
+          </div>
         </div>
 
-        <div class="footer-bottom">
-            <p>© 2026 Where Is My Job. All rights reserved.</p>
+        <!-- Column 2: Job Seekers -->
+        <div class="footer-col">
+          <h4>Job Seekers</h4>
+          <a href="#">Search Jobs</a>
+          <a href="#">Internships</a>
+          <a href="#">Online Courses</a>
+          <a href="#">Hackathons</a>
         </div>
 
-        <!-- Scroll to Top Button moved INSIDE the container for better mobile pinning -->
-        <a href="#" class="scroll-top-btn" aria-label="Scroll to top">
-            <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="19" x2="12" y2="5"></line>
-                <polyline points="5 12 12 5 19 12"></polyline>
-            </svg>
-        </a>
+        <!-- Column 3: Employers -->
+        <div class="footer-col">
+          <h4>Employers</h4>
+          <a href="#">Post a Job</a>
+          <a href="#">Search Resumes</a>
+          <a href="#">Request Demo</a>
+          <a href="#">Pricing</a>
+        </div>
+
+        <!-- Column 4: Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Where Is My Job. All rights reserved.</p>
+      </div>
+
+      <a href="#" class="scroll-top-btn" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </a>
     </div>
-</footer>
+  </footer>
 
-<script src="../scripts/common.js"></script>
-<script src="../scripts/home.js"></script>
+  <script src="../scripts/common.js"></script>
+  <script src="../scripts/home.js"></script>
 
 
 </body>

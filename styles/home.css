@@ -165,7 +165,7 @@
 .fresher-jobs-section {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 10px;
   padding: 60px;
 }
 
@@ -306,7 +306,6 @@
 .card-footer {
   display: flex;
   justify-content: flex-end;
-  /* Pushes button to right */
   align-items: center;
   margin-top: auto;
 }
@@ -360,11 +359,11 @@
 }
 
 .hiring-image-container img {
-  max-width: 780px;
+  max-width: 700px;
   object-fit: contain;
   position: absolute;
-  margin-top: -480px;
-  margin-left: 220px;
+  margin-top: -220px;
+  margin-left: 250px;
 
 }
 
@@ -433,6 +432,41 @@
   gap: 8px;
 }
 
+.courses-section {
+  position: relative;
+}
+
+
+.course-slider-controls {
+  position: absolute;
+  top: 190px;
+  right: 80px;
+  display: flex;
+  gap: 15px;
+}
+
+
+.slider-arrow {
+  background-color: #ffffff;
+  color: #000000;
+  border: solid 1.5px black;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.slider-arrow:hover {
+  background: linear-gradient(90deg, #6366f1, #a855f7);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 .course-card {
   padding-top: 0;
   padding-left: 0;
@@ -471,7 +505,6 @@
   margin: 0 0 25px 0;
 }
 
-/* Bullet Point List */
 .course-benefits {
   list-style-type: none;
   padding-left: 35px;
@@ -506,12 +539,11 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Custom Colored Buttons & Glows */
 .course-card .view-details {
   text-align: center;
-  width: fit-content;
-  font-size: 15px;
+  font-size: 12px;
   margin-top: 10px;
+  width: 320px;
 }
 
 
@@ -748,40 +780,37 @@
   border-radius: 15px;
 }
 
-/* =========================================
-   TABLET & MOBILE RESPONSIVENESS 
-   ========================================= */
 
 /* --- TABLET SCREENS (Under 1024px) --- */
 @media (max-width: 1024px) {
-  /* Shrink the massive hero text */
+
   .hero-title {
     font-size: 100px;
     width: 100%;
   }
-  
-  /* Pull the image back into view */
+
+
   .hero-person-img {
     margin-left: -150px;
     max-width: 550px;
   }
 
-  /* Adjust section titles */
   .section-title {
     font-size: 55px;
   }
 
-  /* Fix Hiring Section spacing */
+
   .hiring-section {
     margin-left: 20px;
     margin-right: 20px;
     padding: 60px 40px;
   }
-  
-  .hiring-title, .demo-button {
-    margin-left: 50px; /* Reduces the huge 220px margin */
+
+  .hiring-title,
+  .demo-button {
+    margin-left: 50px;
   }
-  
+
   .hiring-image-container img {
     margin-left: 0;
     max-width: 400px;
@@ -789,8 +818,9 @@
 }
 
 /* --- MOBILE PHONES (Under 768px) --- */
+
 @media (max-width: 768px) {
-  /* 1. HERO SECTION STACKS */
+
   .hero-section {
     flex-direction: column;
     padding: 40px 20px;
@@ -813,7 +843,7 @@
   }
 
   .hero-person-img {
-    margin-left: 0; /* Resets the -500px desktop margin */
+    margin-left: 0;
     margin-top: 30px;
     max-width: 100%;
   }
@@ -826,8 +856,9 @@
     font-size: 24px;
   }
 
-  /* 2. GENERAL SECTIONS (Reduce Padding & Text) */
-  .fresher-jobs-section, .courses-section, .events-section {
+  .fresher-jobs-section,
+  .courses-section,
+  .events-section {
     padding: 30px 20px;
   }
 
@@ -839,27 +870,28 @@
   /* 3. JOB CARDS (Shrink from 400px to fit mobile screens) */
 
   .filter-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+  }
 
   .filter-chip {
-  background: transparent;
-  border: none;
-  color: black;
-  font-size: 10px;
-  font-weight: 500;
-  text-transform: uppercase;
-  padding: 10px;
-  width: 100px;
-  text-align: center;
-  background: white;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+    background: transparent;
+    border: none;
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    background: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
   .job-card {
     flex: 0 0 300px;
     width: 300px;
@@ -872,15 +904,38 @@
   }
 
   .view-details {
-    width: 100%; /* Makes button stretch across card */
-    padding: 12px 0;
+    width: 100%;
+    padding: 12px 30px;
+  }
+
+  .course-card .view-details {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    width: 190px;
   }
 
   .course-features-row {
-    flex-direction: column; /* Stacks the pills */
+    flex-direction: row;
+    width: fit-content;
   }
 
-  /* 4. HIRING SECTION (Stacking and removing massive desktop margins) */
+  .course-slider-controls {
+    top: -10px;
+    right: 20px;
+  }
+
+  .slider-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .course-slider-controls {
+    top: 150px;
+    right: 20px;
+  }
+
   .hiring-section {
     flex-direction: column;
     margin: 50px 20px;
@@ -900,10 +955,10 @@
 
   .hiring-title {
     font-size: 45px;
-    margin: 0 0 30px 0; /* Resets the 220px left margin */
+    margin: 0 0 30px 0;
   }
 
   .demo-button {
-    margin-left: 0; /* Resets the 220px left margin */
+    margin-left: 0;
   }
 }
