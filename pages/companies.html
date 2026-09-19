@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Where is my job</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Gabarito:wght@400..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Outfit:wght@100..900&family=Poppins&family=Prata&family=Share+Tech&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="../styles/companies.css">
+    <link rel="stylesheet" href="../styles/common.css">
+</head>
+
+<body>
+
+    <!--navigation-bar-->
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="../assests/logo.svg" alt="Where Is My Job Logo" class="logo">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="../pages/jobs.html">JOBS</a></li>
+            <li><a href="../pages/companies.html">COMPANIES</a></li>
+            <li><a href="../pages/courses.html">COURSES</a></li>
+            <li><a href="../pages/contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="nav-account">
+            <div class="nav-actions">
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="account">
+                <p>ACCOUNT</p>
+            </div>
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+            <span class="menu-icon">☰</span>
+        </button>
+    </nav>
+
+    <div class="ai-header">
+        <h1>Find Your <span class="gradient-text">Future</span> Company</h1>
+        <p class="sub">8 companies are actively hiring</p>
+    </div>
+
+    <table class="company-table" cellspacing="20">
+        <tr>
+            <td class="card" onclick="showCompany('Google')">
+                <div class="card-top">
+                    <span class="live-dot">● LIVE</span>
+                </div>
+                <div class="logo-circle google-ai">G</div>
+                <h2>Google</h2>
+                <p class="role">Software Engineer</p>
+                <div class="tags">
+                    <span>Bengaluru</span><span>25L - 35L</span>
+                </div>
+                <button>VIEW DETAILS ></button>
+            </td>
+
+            <td class="card featured-zoho" onclick="showCompany('Zoho')">
+                <div class="card-top"><span class="live-dot">● HOT</span>
+                </div>
+                <div class="logo-circle zoho-ai">Z</div>
+                <h2 class="zoho-text">Zoho</h2>
+                <p class="role">Backend Developer</p>
+                <div class="tags">
+                    <span>Chennai</span><span>6L - 9L</span>
+                </div>
+                <button class="btn-zoho">VIEW DETAILS ></button>
+            </td>
+
+            <td class="card" onclick="showCompany('Microsoft')">
+                <div class="card-top">
+                    <span class="live-dot">● LIVE</span>
+                </div>
+                <div class="logo-circle ms-ai">M</div>
+                <h2>Microsoft</h2>
+                <p class="role">Cloud Engineer</p>
+                <div class="tags">
+                    <span>Bengaluru</span><span>15L - 25L</span>
+                </div>
+                <button>VIEW DETAILS ></button>
+            </td>
+
+            <td class="card" onclick="showCompany('Amazon')">
+                <div class="card-top"><span class="live-dot">● LIVE</span></div>
+                <div class="logo-circle amazon-ai">a</div>
+                <h2>Amazon</h2>
+                <p class="role">Data Analyst</p>
+                <div class="tags">
+                    <span>Hyderabad</span><span>8L - 12L</span>
+                </div>
+                <button>VIEW DETAILS ></button>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="card" onclick="showCompany('Infosys')">
+                <div class="card-top"><span class="live-dot">● LIVE</span></div>
+                <div class="logo-circle infosys-ai">In</div>
+                <h2>Infosys</h2>
+                <p class="role">Technology Analyst</p>
+                <div class="tags">
+                    <span>Pune</span><span>7L - 10L</span>
+                </div>
+                <button>VIEW DETAILS ></button>
+            </td>
+
+            <td class="card" onclick="showCompany('Intel')">
+                <div class="card-top"><span class="live-dot">● LIVE</span></div>
+                <div class="logo-circle intel-ai">i</div>
+                <h2>Intel</h2>
+                <p class="role">Embedded Engineer</p>
+                <div class="tags">
+                    <span>Bangalore</span><span>7L</span>
+                </div>
+                <button>VIEW DETAILS ></button>
+            </td>
+
+            <td class="card" onclick="showCompany('TCS')">
+                <div class="card-top"><span class="live-dot">● LIVE</span></div>
+                <div class="logo-circle tcs-ai">TCS</div>
+                <h2>TCS</h2>
+                <p class="role">Java Developer</p>
+                <div class="tags"><span>Chennai</span><span>5L - 8L</span></div>
+                <button>VIEW DETAILS ></button>
+            </td>
+
+            <td class="card" onclick="showCompany('Wipro')">
+                <div class="card-top"><span class="live-dot">● LIVE</span>
+                </div>
+                <div class="logo-circle wipro-ai">W</div>
+                <h2>Wipro</h2>
+                <p class="role">UI/UX Designer</p>
+                <div class="tags">
+                    <span>Pune</span><span>6L - 10L</span>
+                </div>
+                <button>VIEW DETAILS ></button>
+            </td>
+        </tr>
+    </table>
+
+    <div id="details" class="details-box">
+        <div class="detail-header">
+            <img id="d-banner" src="" alt="Company Office Photo">
+            <div class="banner-overlay">
+                <div id="d-logo-circle" class="detail-logo">Z</div>
+                <div>
+                    <h1 id="d-name"></h1>
+                    <p id="d-loc"></p>
+                </div>
+            </div>
+        </div>
+        <div class="detail-body">
+            <h2>About Company</h2>
+            <p id="d-about"></p>
+            <br>
+            <div class="action-row">
+                <a href="../pages/applicationform.html">
+                <button class="apply-ai">APPLY NOW</button>
+                </a>
+                <button class="close-btn" onclick="hideCompany()">CLOSE</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="floating-footer">
+        <div class="footer-container">
+
+            <div class="footer-content">
+                <!-- Column 1: Brand -->
+                <div class="footer-col brand-col">
+                    <!-- Image is now cleanly sized without absolute positioning -->
+                    <img src="..//assests/logo.svg" alt="Where Is My Job" class="footer-img">
+                    <p class="footer-tagline">Your ultimate platform to find top tech roles, internships, and
+                        buildathons.</p>
+
+                    <div class="footer-socials">
+                        <i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i>
+                        <i class="fa-brands fa-linkedin-in" style="color: rgb(255, 255, 255);"></i>
+                        <i class="fa-brands fa-x-twitter" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                </div>
+
+                <!-- Column 2: Job Seekers -->
+                <div class="footer-col">
+                    <h4>Job Seekers</h4>
+                    <a href="#">Search Jobs</a>
+                    <a href="#">Internships</a>
+                    <a href="#">Online Courses</a>
+                    <a href="#">Hackathons</a>
+                </div>
+
+                <!-- Column 3: Employers -->
+                <div class="footer-col">
+                    <h4>Employers</h4>
+                    <a href="#">Post a Job</a>
+                    <a href="#">Search Resumes</a>
+                    <a href="#">Request Demo</a>
+                    <a href="#">Pricing</a>
+                </div>
+
+                <!-- Column 4: Company -->
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Where Is My Job. All rights reserved.</p>
+            </div>
+
+            <a href="#" class="scroll-top-btn" aria-label="Scroll to top">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                    <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+            </a>
+        </div>
+    </footer>
+
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/companies.js"></script>
+</body>
+
+</html>
