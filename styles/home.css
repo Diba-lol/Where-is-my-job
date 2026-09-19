@@ -1,3 +1,5 @@
+/* ---HERO-SECTION--- */
+
 .hero-section {
   display: flex;
   align-items: center;
@@ -161,6 +163,8 @@
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -5px 0px inset;
   z-index: 3;
 }
+
+/* ---FIND CAREER SECTION--- */
 
 .fresher-jobs-section {
   display: flex;
@@ -334,7 +338,7 @@
   transform: scale(1.05);
 }
 
-/* hiring-section */
+/* ---HIRING SECTION--- */
 
 .hiring-section {
   background-color: #000000;
@@ -405,7 +409,7 @@
   transform: translateY(-3px);
 }
 
-/* online-courses-section */
+/* ---ONLINE COURSES SECTION--- */
 
 .courses-section {
   padding: 60px;
@@ -546,9 +550,8 @@
   width: 320px;
 }
 
+/* ---HACKATHON SECTION--- */
 
-
-/* ---hackothon-section--- */
 .events-section {
   padding: 60px;
   font-family: 'Inter', sans-serif;
@@ -640,7 +643,6 @@
   width: 8px;
   height: 8px;
   background-color: #10b981;
-  /* Green dot */
   border-radius: 50%;
   box-shadow: 0 0 8px #10b981;
   animation: pulse 1.5s infinite;
@@ -701,6 +703,8 @@
   font-size: 12px;
   width: fit-content;
 }
+
+/* ---SUCCESS STORIES--- */
 
 .testimonial-card {
   display: flex;
@@ -781,7 +785,7 @@
 }
 
 
-/* --- TABLET SCREENS (Under 1024px) --- */
+
 @media (max-width: 1024px) {
 
   .hero-title {
@@ -817,7 +821,7 @@
   }
 }
 
-/* --- MOBILE PHONES (Under 768px) --- */
+/* ---MOBILE PHONES--- */
 
 @media (max-width: 768px) {
 
@@ -867,7 +871,6 @@
     line-height: 1.1;
   }
 
-  /* 3. JOB CARDS (Shrink from 400px to fit mobile screens) */
 
   .filter-container {
     display: flex;
