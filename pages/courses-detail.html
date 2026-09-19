@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Course Details | Where Is My Job</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Gabarito:wght@400..900&family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+	<link rel="stylesheet" href="../styles/common.css">
+	<link rel="stylesheet" href="../styles/courses-detail.css">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="nav-logo"><img src="../assests/logo.svg" alt="Where Is My Job Logo" class="logo"></div>
+		<ul class="nav-links">
+			<li><a href="../pages/home.html">HOME</a></li>
+			<li><a href="../pages/jobs.html">JOBS</a></li>
+			<li><a href="../pages/companies.html">COMPANIES</a></li>
+			<li><a href="../pages/courses.html" class="active-nav">COURSES</a></li>
+			<li><a href="../pages/contact.html">CONTACT</a></li>
+		</ul>
+		<div class="nav-account">
+			<div class="nav-actions"><i class="fa-regular fa-user"></i></div>
+			<div class="account"><p>ACCOUNT</p></div>
+		</div>
+		<button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span class="menu-icon">☰</span></button>
+	</nav>
+
+	<main class="course-detail-page">
+		<a class="back-link" href="../pages/courses.html"><span aria-hidden="true">←</span> BACK TO COURSES</a>
+		<article class="course-detail-card" id="courseDetail" aria-labelledby="courseTitle">
+			<div class="detail-hero" id="detailHero">
+				<div class="detail-hero-copy">
+					<p class="detail-eyebrow" id="courseCategory">ONLINE COURSE</p>
+					<h1 id="courseTitle">Loading course...</h1>
+					<p class="detail-subtitle" id="courseSubtitle"></p>
+				</div>
+				<img id="courseImage" src="../assests/data-science.png" alt="">
+			</div>
+
+			<div class="detail-layout">
+				<div class="detail-content">
+					<section class="detail-section">
+						<p class="section-kicker">THE COURSE</p>
+						<h2>Build skills that move your career forward.</h2>
+						<p id="courseDescription"></p>
+					</section>
+					<section class="detail-section">
+						<p class="section-kicker">WHAT YOU WILL LEARN</p>
+						<ul class="detail-list" id="courseLearnings"></ul>
+					</section>
+					<section class="detail-section">
+						<p class="section-kicker">PROJECT WORK</p>
+						<p id="courseProject"></p>
+					</section>
+				</div>
+
+				<aside class="course-sidebar">
+					<div class="sidebar-block">
+						<p class="section-kicker">COURSE SNAPSHOT</p>
+						<div class="snapshot-row"><span>Level</span><strong id="courseLevel"></strong></div>
+						<div class="snapshot-row"><span>Duration</span><strong id="courseDuration"></strong></div>
+						<div class="snapshot-row"><span>Format</span><strong>Live + projects</strong></div>
+					</div>
+					<div class="sidebar-block">
+						<p class="section-kicker">TOOLS &amp; SKILLS</p>
+						<div class="skills-tags" id="courseSkills"></div>
+					</div>
+					<a class="enroll-button" href="../pages/applicationform.html">START LEARNING <span aria-hidden="true">→</span></a>
+				</aside>
+			</div>
+		</article>
+	</main>
+
+	<footer class="floating-footer">
+		<div class="footer-container">
+			<div class="footer-content">
+				<div class="footer-col brand-col">
+					<img src="../assests/logo.svg" alt="Where Is My Job" class="footer-img">
+					<p class="footer-tagline">Your ultimate platform to find top tech roles, internships, and buildathons.</p>
+					<div class="footer-socials"><i class="fa-brands fa-instagram"></i><i class="fa-brands fa-linkedin-in"></i><i class="fa-brands fa-x-twitter"></i></div>
+				</div>
+				<div class="footer-col"><h4>Job Seekers</h4><a href="../pages/jobs.html">Search Jobs</a><a href="#">Internships</a><a href="../pages/courses.html">Online Courses</a><a href="#">Hackathons</a></div>
+				<div class="footer-col"><h4>Employers</h4><a href="#">Post a Job</a><a href="#">Search Resumes</a><a href="#">Request Demo</a><a href="#">Pricing</a></div>
+				<div class="footer-col"><h4>Company</h4><a href="#">About Us</a><a href="../pages/contact.html">Contact Us</a><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+			</div>
+			<div class="footer-bottom"><p>© 2026 Where Is My Job. All rights reserved.</p></div>
+			<a href="#" class="scroll-top-btn" aria-label="Scroll to top"><svg viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg></a>
+		</div>
+	</footer>
+	<script src="../scripts/common.js"></script>
+	<script src="../scripts/courses-detail.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+body {
+	background: linear-gradient(135deg, #ededed 0%, #d7d7d7 60%, #c9c9c9 100%);
+}
+
+.course-detail-page {
+	font-family: 'Poppins', sans-serif;
+	margin: 0 auto;
+	max-width: 1220px;
+	padding: 45px 60px 70px;
+}
+
+.back-link {
+	color: #111;
+	display: inline-block;
+	font-family: 'Anton', sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin-bottom: 25px;
+	text-decoration: none;
+}
+
+.back-link span { font-size: 22px; margin-right: 8px; vertical-align: -2px; }
+.course-detail-card { background: #050505; border-radius: 28px; color: #fff; overflow: hidden; }
+.detail-hero { align-items: center; display: flex; justify-content: space-between; min-height: 285px; padding: 42px 58px; }
+.detail-hero-copy { max-width: 650px; }
+.detail-hero h1 { font-family: 'Anton', sans-serif; font-size: clamp(42px, 6vw, 78px); font-weight: 400; line-height: .98; margin: 10px 0 18px; }
+.detail-eyebrow, .section-kicker { font-family: 'Anton', sans-serif; font-size: 13px; letter-spacing: 1.5px; margin: 0; }
+.detail-subtitle { font-size: 16px; line-height: 1.6; margin: 0; max-width: 560px; }
+.detail-hero img { height: 190px; object-fit: contain; width: 240px; }
+.detail-green .detail-hero { background: linear-gradient(125deg, #a3e635, #73e6a1); color: #07100a; }
+.detail-pink .detail-hero { background: linear-gradient(125deg, #f472b6, #ffb27a); color: #170613; }
+.detail-blue .detail-hero { background: linear-gradient(125deg, #38bdf8, #8294ff); color: #06101c; }
+.detail-orange .detail-hero { background: linear-gradient(125deg, #fb923c, #facc15); color: #160b03; }
+.detail-purple .detail-hero { background: linear-gradient(125deg, #a78bfa, #ec4899); color: #12061c; }
+.detail-layout { display: grid; gap: 58px; grid-template-columns: minmax(0, 1fr) 310px; padding: 52px 58px 60px; }
+.detail-section { border-bottom: 1px solid #2c2c2c; padding-bottom: 28px; margin-bottom: 30px; }
+.detail-section h2 { font-family: 'Gabarito', sans-serif; font-size: 30px; line-height: 1.15; margin: 13px 0 15px; }
+.detail-section p:not(.section-kicker) { color: #cbd5e1; font-size: 15px; line-height: 1.8; margin: 0; }
+.detail-list { color: #e2e8f0; font-size: 15px; line-height: 1.7; list-style: none; margin: 20px 0 0; padding: 0; }
+.detail-list li { margin: 12px 0; padding-left: 28px; }
+.detail-list li::before { color: #a3e635; content: '✓'; font-weight: 700; margin-left: -28px; margin-right: 15px; }
+.course-sidebar { border-left: 1px solid #2c2c2c; padding-left: 32px; }
+.sidebar-block { border-bottom: 1px solid #2c2c2c; padding-bottom: 24px; margin-bottom: 28px; }
+.snapshot-row { align-items: center; border-bottom: 1px solid #222; color: #94a3b8; display: flex; font-size: 13px; justify-content: space-between; padding: 15px 0; }
+.snapshot-row strong { color: #fff; font-weight: 500; }
+.skills-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.skills-tags span { border: 1px solid #475569; border-radius: 16px; color: #e2e8f0; font-size: 12px; padding: 7px 10px; }
+.enroll-button { background: linear-gradient(90deg, #a3e635, #73e6a1); color: #000; display: flex; font-family: 'Anton', sans-serif; font-size: 15px; justify-content: space-between; letter-spacing: 1px; padding: 15px 18px; text-decoration: none; }
+.enroll-button span { font-size: 22px; line-height: 13px; }
+
+@media (max-width: 760px) {
+	.course-detail-page { padding: 30px 18px 45px; }
+	.detail-hero { align-items: flex-start; flex-direction: column; padding: 34px 26px; }
+	.detail-hero h1 { font-size: 48px; }
+	.detail-hero img { align-self: center; height: 135px; margin-top: 15px; width: 190px; }
+	.detail-layout { display: block; padding: 35px 26px 40px; }
+	.course-sidebar { border-left: 0; border-top: 1px solid #2c2c2c; padding: 32px 0 0; }
+}
