@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+	// Keep all course content in one place so the detail page can be reused.
 	const courses = {
 		"data-science": {
 			title: "Data Science",
@@ -106,10 +107,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	};
 
+	// Read the selected course from the URL, with Data Science as the fallback.
 	const params = new URLSearchParams(window.location.search);
 	const course = courses[params.get("course")] || courses["data-science"];
 	const detailCard = document.getElementById("courseDetail");
 
+	// Fill the static page structure with the selected course's content.
 	document.title = `${course.title} | Where Is My Job`;
 	document.getElementById("courseCategory").textContent = course.category;
 	document.getElementById("courseTitle").textContent = course.title;
@@ -122,6 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	document.getElementById("courseDuration").textContent = course.duration;
 	detailCard.classList.add(`detail-${course.color}`);
 
+	// Build the learning outcomes and skill tags from the selected course data.
 	document.getElementById("courseLearnings").innerHTML = course.learnings.map(function (learning) {
 		return `<li>${learning}</li>`;
 	}).join("");
