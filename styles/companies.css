@@ -1,11 +1,3 @@
-/* body {
-  font-family: sans-serif;
-  background: #0a0a0a;
-  background-image: radial-gradient(circle at 20% 30%, #1a0a00 0%, transparent 50%), radial-gradient(circle at 80% 70%, #001a33 0%, transparent 50%);
-  color: white;
-  padding: 30px;
-  margin: 0;
-} */
 
 .ai-header {
   text-align: center;
@@ -253,4 +245,88 @@
   padding: 12px 30px !important;
   border-radius: 10px !important;
   cursor: pointer;
+}
+
+/* 
+   RESPONSIVE ADD-ON (PASTE AT THE VERY BOTTOM OF CSS)
+*/
+
+/* --- TABLET VIEW (Laptops & iPads: 2 cards per row) --- */
+@media (max-width: 992px) {
+  .company-table,
+  .company-table tbody {
+    display: block;
+    width: 100%;
+  }
+
+  .company-table tr {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards side-by-side */
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 100% !important; 
+    box-sizing: border-box;
+  }
+}
+
+/* --- MOBILE VIEW (Phones: 1 card per row + Details Fix) --- */
+@media (max-width: 600px) {
+  .company-table {
+    padding: 0 10px;
+  }
+
+  .company-table tr {
+    grid-template-columns: 1fr; 
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .card {
+    width: 100% !important;
+    padding: 16px;
+  }
+
+
+  .details-box {
+    margin: 15px 10px !important;
+    border-radius: 16px;
+  }
+
+  .detail-header {
+    height: 220px;
+  }
+
+  .banner-overlay {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .detail-logo {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 28px;
+  }
+
+  .detail-body {
+    padding: 18px;
+  }
+
+  .action-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .close-btn {
+    width: 100% !important;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }

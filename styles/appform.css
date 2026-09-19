@@ -43,10 +43,6 @@ label {
   letter-spacing: 0.5px;
 }
 
-span {
-  color: #f75d55;
-  margin-left: 3px;
-}
 
 .optional {
   font-weight: normal;
@@ -174,10 +170,99 @@ fieldset.field {
   box-shadow: 6px 6px 0px #000000;
 }
 
-@media (max-width: 600px) {
+/* RESPONSIVE ADD-ON (PASTE AT THE VERY BOTTOM OF CSS) */
+
+
+@media (max-width: 768px) {
   .application-section {
-    padding: 20px;
-    font-size: 14px;
+    margin: 24px 16px;
+    padding: 28px 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px #000000;
+  }
+
+  .application-form h1 {
+    font-size: 2rem;
+  }
+
+  .application-form p {
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+  }
+}
+
+/* --- MOBILE PHONES (Below 480px) --- */
+@media (max-width: 480px) {
+  .application-section {
+    margin: 16px 12px;
+    padding: 22px 14px;
+    border-width: 2.5px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 0px #000000;
+  }
+
+  .application-form h1 {
+    font-size: 1.65rem;
+    letter-spacing: 0.5px;
+  }
+
+  .application-form p {
+    font-size: 0.88rem;
     margin-bottom: 20px;
+  }
+
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="url"],
+  select,
+  textarea {
+    padding: 12px 14px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+
+  
+  fieldset.field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .choice {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+
+  /* Resume upload drop area */
+  .upload {
+    padding: 20px 12px;
+    border-radius: 12px;
+  }
+
+  .upload strong {
+    font-size: 0.95rem;
+  }
+
+  .upload span {
+    font-size: 0.75rem;
+  }
+
+  /* Submit button */
+  .submit-btn {
+    padding: 14px;
+    font-size: 1.1rem;
+    box-shadow: 3px 3px 0px #000000;
+  }
+
+  .submit-btn:hover {
+    transform: none;
+    box-shadow: 3px 3px 0px #000000;
   }
 }
