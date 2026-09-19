@@ -126,8 +126,7 @@ main {
     flex-direction: column;
     gap: 36px;
     min-width: 0;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
+    border-radius: 30px;
 }
 
 .details h2 {
@@ -204,8 +203,7 @@ main {
     background: var(--panel);
     padding: 48px 44px;
     min-width: 0;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 30px;
 }
 
 .form-panel h2 {

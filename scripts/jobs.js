@@ -1,3 +1,6 @@
+
+// RADIO BUTTON TOGGLE LOGIC
+
 document.addEventListener("DOMContentLoaded", () => {
   const searchInput = document.getElementById("jobSearch");
   const allFilters = document.querySelectorAll(".jobs-sidebar input");
@@ -16,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // CORE FILTERING ENGIN
 
   function filterJobs() {
     const searchText = searchInput ? searchInput.value.toLowerCase().trim() : "";

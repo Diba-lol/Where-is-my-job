@@ -1,6 +1,7 @@
+// FILTER SECTION
+
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Select elements exactly once
     const filterChips = document.querySelectorAll(".filter-chip");
     const jobCards = document.querySelectorAll(".job-card");
 
@@ -9,10 +10,12 @@ document.addEventListener("DOMContentLoaded", () => {
             chip.addEventListener("click", () => {
 
                 // 1. UPDATE STYLING (Color Change)
+
                 filterChips.forEach(item => item.classList.remove("active"));
                 chip.classList.add("active");
 
                 // 2. SCROLL ANIMATION (Your custom code)
+
                 chip.scrollIntoView({
                     behavior: "smooth",
                     inline: "center",
@@ -20,6 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
 
                 // 3. FILTER JOB CARDS
+
                 if (jobCards.length > 0) {
                     const filterValue = chip.getAttribute("data-filter");
 
@@ -39,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+// JOB CONTAINER SECTION
 
 const sliders = document.querySelectorAll('.job-cards-container');
 
@@ -73,6 +78,7 @@ sliders.forEach(slider => {
     });
 });
 
+// COURSES CARD SILDER ARROW
 
 document.addEventListener("DOMContentLoaded", () => {
 

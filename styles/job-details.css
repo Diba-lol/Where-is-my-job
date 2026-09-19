@@ -1,9 +1,12 @@
+/* ---JOB DETAILS CONTAINER--- */
 
 .job-details-container {
   display: flex;
   justify-content: center;
   padding: 70px 20px;
 }
+
+/* ---JOB CARD--- */
 
 .giant-job-card {
   background-color: #000000;
