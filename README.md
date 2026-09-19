@@ -16,12 +16,12 @@ Where Is My Job is a front-end career platform for discovering jobs, companies, 
 
 ```text
 Where-is-my-job/
-├── index.html                 # Entry page
-├── companies.html             # Company listing
+├── index.html                 # Entry page           
 ├── pages/                     # Main application pages
 │   ├── home.html
 │   ├── jobs.html
 │   ├── job-details.html
+|   ├── companies.html 
 │   ├── courses.html
 │   ├── courses-detail.html
 │   ├── applicationform.html
