@@ -66,6 +66,7 @@ input[type="text"],input[type="email"],input[type="tel"],input[type="url"],selec
 
 input:focus, select:focus, textarea:focus {
   background-color: #ffffff; 
+  border-color: #7c3aed;
 }
 
 fieldset.field {
@@ -170,8 +171,6 @@ fieldset.field {
   box-shadow: 6px 6px 0px #000000;
 }
 
-/* RESPONSIVE ADD-ON (PASTE AT THE VERY BOTTOM OF CSS) */
-
 
 @media (max-width: 768px) {
   .application-section {
@@ -191,7 +190,6 @@ fieldset.field {
   }
 }
 
-/* --- MOBILE PHONES (Below 480px) --- */
 @media (max-width: 480px) {
   .application-section {
     margin: 16px 12px;
@@ -240,7 +238,6 @@ fieldset.field {
     font-size: 0.85rem;
   }
 
-  /* Resume upload drop area */
   .upload {
     padding: 20px 12px;
     border-radius: 12px;
@@ -254,7 +251,6 @@ fieldset.field {
     font-size: 0.75rem;
   }
 
-  /* Submit button */
   .submit-btn {
     padding: 14px;
     font-size: 1.1rem;
